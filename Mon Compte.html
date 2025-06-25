@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mon Compte - Ski Alpin Fantasy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --main-red: #e50914;
+      --white: #ffffff;
+      --light-gray: #f5f5f5;
+      --dark-gray: #333;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-gray);
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: var(--white);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: var(--main-red);
+      border-bottom: 2px solid var(--main-red);
+      padding-bottom: 0.5rem;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      background-color: var(--main-red);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #c40810;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .stat-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-user-cog"></i> Mon Compte</h1>
+    
+    <div class="form-group">
+      <label for="username">Nom d'utilisateur</label>
+      <input type="text" id="username" value="JohnDoe">
+      <button onclick="updateUsername()">Mettre à jour</button>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" value="john@example.com">
+      <button onclick="updateEmail()">Mettre à jour</button>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Nouveau mot de passe</label>
+      <input type="password" id="newPassword" placeholder="••••••••">
+      <label for="confirmPassword">Confirmer le mot de passe</label>
+      <input type="password" id="confirmPassword" placeholder="••••••••">
+      <button onclick="updatePassword()">Changer le mot de passe</button>
+    </div>
+
+    <div class="form-group">
+      <label for="avatar">Photo de profil</label>
+      <input type="file" id="avatar" accept="image/*">
+      <button onclick="uploadAvatar()">Télécharger</button>
+    </div>
+
+    <h2><i class="fas fa-chart-line"></i> Mes Statistiques</h2>
+    <div class="stats">
+      <div class="stat-card">
+        <h3>Classement</h3>
+        <p>#42</p>
+      </div>
+      <div class="stat-card">
+        <h3>Points</h3>
+        <p>1,248</p>
+      </div>
+      <div class="stat-card">
+        <h3>Depuis</h3>
+        <p>Jan 2023</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 2rem;">
+      <button style="background-color: #dc3545;" onclick="deleteAccount()">
+        <i class="fas fa-trash-alt"></i> Supprimer mon compte
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Load current user data
+    const currentUser = JSON.parse(localStorage.getItem('loggedInUser'));
+    if (currentUser) {
+      document.getElementById('username').value = currentUser.username;
+      document.getElementById('email').value = currentUser.email;
+    }
+
+    function updateUsername() {
+      const newUsername = document.getElementById('username').value;
+      // Update in localStorage
+      currentUser.username = newUsername;
+      localStorage.setItem('loggedInUser', JSON.stringify(currentUser));
+      alert('Nom d\'utilisateur mis à jour!');
+    }
+
+    function updateEmail() {
+      const newEmail = document.getElementById('email').value;
+      // Update in localStorage
+      currentUser.email = newEmail;
+      localStorage.setItem('loggedInUser', JSON.stringify(currentUser));
+      alert('Email mis à jour!');
+    }
+
+    function updatePassword() {
+      const newPass = document.getElementById('newPassword').value;
+      const confirmPass = document.getElementById('confirmPassword').value;
+      
+      if (newPass !== confirmPass) {
+        alert('Les mots de passe ne correspondent pas!');
+        return;
+      }
+      
+      // Update password in localStorage
+      const users = JSON.parse(localStorage.getItem('fantasy_users'));
+      const userIndex = users.findIndex(u => u.username === currentUser.username);
+      users[userIndex].password = newPass;
+      localStorage.setItem('fantasy_users', JSON.stringify(users));
+      
+      alert('Mot de passe mis à jour!');
+    }
+
+    function deleteAccount() {
+      if (confirm('Êtes-vous sûr de vouloir supprimer votre compte? Cette action est irréversible.')) {
+        // Remove from users array
+        const users = JSON.parse(localStorage.getItem('fantasy_users'));
+        const updatedUsers = users.filter(u => u.username !== currentUser.username);
+        localStorage.setItem('fantasy_users', JSON.stringify(updatedUsers));
+        
+        // Logout
+        localStorage.removeItem('loggedInUser');
+        window.location.href = 'index.html';
+      }
+    }
+  </script>
+</body>
+</html>
