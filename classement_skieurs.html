@@ -239,6 +239,114 @@
       margin: 0 auto;
     }
 
+        .auth-links {
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    .auth-links a {
+      font-weight: 600;
+      color: var(--main-red);
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 2px solid var(--main-red);
+      border-radius: 30px;
+      transition: background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1rem;
+      white-space: nowrap;
+      box-shadow: 0 0 0 transparent;
+      cursor: pointer;
+    }
+    .auth-links a:hover,
+    .auth-links a:focus {
+      background-color: var(--main-red);
+      color: var(--white);
+      box-shadow: 0 4px 12px var(--main-red);
+      outline: none;
+      text-decoration: none;
+    }
+
+    /* User menu styles */
+    .user-menu {
+      position: relative;
+      display: inline-block;
+    }
+
+    #user-menu-button {
+      background: none;
+      border: 2px solid var(--main-red);
+      color: var(--main-red);
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-family: var(--font-primary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      user-select: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    #user-menu-button:hover,
+    #user-menu-button:focus {
+      background-color: var(--main-red);
+      color: var(--white);
+      outline: none;
+    }
+
+    #user-dropdown {
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: var(--white);
+      box-shadow: 0 5px 15px var(--shadow-color);
+      border-radius: 10px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      min-width: 160px;
+      z-index: 200;
+      display: none; /* Hidden by default */
+    }
+
+    #user-dropdown li {
+      border-bottom: 1px solid #eee;
+    }
+
+    #user-dropdown li:last-child {
+      border-bottom: none;
+    }
+
+    #user-dropdown a,
+    #user-dropdown button {
+      display: block;
+      padding: 12px 16px;
+      color: var(--main-red);
+      text-decoration: none;
+      font-weight: 600;
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      font-family: var(--font-primary);
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+
+    #user-dropdown a:hover,
+    #user-dropdown button:hover,
+    #user-dropdown a:focus,
+    #user-dropdown button:focus {
+      background-color: var(--main-red);
+      color: var(--white);
+      outline: none;
+    }
+
  .modal {
   display: none;
   position: fixed;
@@ -314,6 +422,31 @@
 .close:hover {
   color: #000;
 }
+
+    /* Form styles */
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    form input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    form button {
+      background-color: var(--main-red);
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+    }
 
 main {
   max-width: 900px;
@@ -479,15 +612,17 @@ main h1 {
 </head>
 
 <body>
- <!-- Top bar 1 -->
-  <header class="topbar1" role="banner">
-    <div class="logo"><i class="fas fa-mountain"></i> Ski Alpin Fantasy 2026</div>
-    <nav class="auth-links">
-      <a href="#" id="loginBtn"><i class="fas fa-sign-in-alt"></i> Connexion</a>
-      <a href="#" id="registerLink"><i class="fas fa-user-plus"></i> Inscription</a>
-      <a href="#" id="logoutBtn" style="display:none;"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
-    </nav>
-  </header>
+<header class="topbar1" role="banner" aria-label="Barre de navigation principale">
+  <div class="logo" aria-label="Logo Ski Alpin Fantasy">
+    <i class="fas fa-mountain"></i> Ski Alpin Fantasy 2026
+  </div>
+  <nav id="nav-auth">
+    <div class="auth-links">
+      <a href="#" id="openLogin"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+      <a href="#" id="openSignup"><i class="fas fa-user-plus"></i> Inscription</a>
+    </div>
+  </nav>
+</header>
 
   <!-- Top bar 2 -->
   <nav class="topbar2">
@@ -541,42 +676,188 @@ main h1 {
     &copy; 2026 Ski Alpin Fantasy. Tous droits réservés.
   </footer>
 
-  <!-- Modale Connexion -->
-  <div id="loginModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+<!-- MODALE CONNEXION -->
+  <div id="loginModal" class="modal">
     <div class="modal-content">
       <span class="close" data-close="loginModal">&times;</span>
-      <h2 id="loginTitle">Connexion</h2>
+      <h2>Connexion</h2>
       <form id="loginForm">
-        <label for="username">Email :</label>
-        <input type="email" id="username" required />
-        <label for="password">Mot de passe :</label>
-        <input type="password" id="password" required />
+        <label>Pseudo : <input type="text" name="username" required></label>
+        <label>Mot de passe : <input type="password" name="password" required></label>
         <button type="submit">Se connecter</button>
-        <div id="loginError"></div>
       </form>
     </div>
   </div>
 
-  <!-- Modale Inscription -->
-  <div id="registerModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="registerTitle">
+  <!-- MODALE INSCRIPTION -->
+  <div id="signupModal" class="modal">
     <div class="modal-content">
-      <span class="close" data-close="registerModal">&times;</span>
-      <h2 id="registerTitle">Inscription</h2>
-      <form id="registerForm">
-        <label for="regUsername">Email :</label>
-        <input type="email" id="regUsername" required />
-        <label for="regPassword">Mot de passe :</label>
-        <input type="password" id="regPassword" required />
-        <label for="confirmPassword">Confirmez le mot de passe :</label>
-        <input type="password" id="confirmPassword" required />
-        <button type="submit">S'inscrire</button>
-        <div id="registerError"></div>
+      <span class="close" data-close="signupModal">&times;</span>
+      <h2>Inscription</h2>
+      <form id="signupForm">
+        <label>Pseudo : <input type="text" name="username" required></label>
+        <label>Email : <input type="email" name="email" required></label>
+        <label>Mot de passe : <input type="password" name="password" required></label>
+        <label>Confirmez : <input type="password" name="confirmPassword" required></label>
+        <button type="submit">Créer un compte</button>
       </form>
     </div>
   </div>
 
   <script>
- document.addEventListener("DOMContentLoaded", () => {
+     document.addEventListener("DOMContentLoaded", () => {
+      // Modal functions
+      function openModal(id) {
+        document.getElementById(id).style.display = "block";
+      }
+      
+      function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+
+      // User management
+      function getUsers() {
+        return JSON.parse(localStorage.getItem("fantasy_users")) || [];
+      }
+
+      function saveUsers(users) {
+        localStorage.setItem("fantasy_users", JSON.stringify(users));
+      }
+
+      function getLoggedInUser() {
+        return JSON.parse(localStorage.getItem("loggedInUser"));
+      }
+
+      function setLoggedInUser(user) {
+        localStorage.setItem("loggedInUser", JSON.stringify(user));
+      }
+
+      function logout() {
+        localStorage.removeItem("loggedInUser");
+        updateNavAuthUI();
+      }
+
+      // Update navigation based on login state
+      function updateNavAuthUI() {
+        const nav = document.getElementById("nav-auth");
+        const user = getLoggedInUser();
+
+        if (user) {
+          // User is logged in - show dropdown
+          nav.innerHTML = `
+            <div class="user-menu">
+              <button id="user-menu-button">${user.username} <i class="fas fa-caret-down"></i></button>
+              <ul id="user-dropdown">
+                <li><a href="Mon Compte.html">Mon Compte</a></li>
+                <li><a href="Paramètres.html"><button id="settingsBtn">Paramètres</button></li>
+                <li><button id="logoutBtn">Déconnexion</button></li>
+              </ul>
+            </div>
+          `;
+
+          // Add dropdown toggle
+          const userButton = document.getElementById("user-menu-button");
+          const dropdown = document.getElementById("user-dropdown");
+          
+          userButton.addEventListener("click", () => {
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+          });
+
+          // Add logout
+          document.getElementById("logoutBtn").addEventListener("click", (e) => {
+            e.preventDefault();
+            logout();
+          });
+        } else {
+          // User is not logged in - show auth links
+          nav.innerHTML = `
+            <div class="auth-links">
+              <a href="#" id="openLogin"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+              <a href="#" id="openSignup"><i class="fas fa-user-plus"></i> Inscription</a>
+            </div>
+          `;
+
+          // Add modal openers
+          document.getElementById("openLogin").addEventListener("click", (e) => {
+            e.preventDefault();
+            openModal("loginModal");
+          });
+
+          document.getElementById("openSignup").addEventListener("click", (e) => {
+            e.preventDefault();
+            openModal("signupModal");
+          });
+        }
+      }
+
+      // Close modals when clicking outside
+      window.addEventListener("click", (e) => {
+        if (e.target.classList.contains("modal")) {
+          closeModal(e.target.id);
+        }
+      });
+
+      // Close modals with X button
+      document.querySelectorAll(".close").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          closeModal(btn.dataset.close);
+        });
+      });
+
+      // Signup form
+      document.getElementById("signupForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        
+        const username = e.target.username.value.trim();
+        const email = e.target.email.value.trim();
+        const password = e.target.password.value;
+        const confirmPassword = e.target.confirmPassword.value;
+
+        if (password !== confirmPassword) {
+          alert("Les mots de passe ne correspondent pas!");
+          return;
+        }
+
+        const users = getUsers();
+        
+        if (users.some(user => user.username === username)) {
+          alert("Ce pseudo est déjà pris!");
+          return;
+        }
+
+        users.push({ username, email, password });
+        saveUsers(users);
+        
+        alert("Compte créé avec succès! Vous pouvez maintenant vous connecter.");
+        closeModal("signupModal");
+        openModal("loginModal");
+      });
+
+      // Login form
+      document.getElementById("loginForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        
+        const username = e.target.username.value.trim();
+        const password = e.target.password.value;
+        const users = getUsers();
+
+        const user = users.find(user => 
+          user.username === username && 
+          user.password === password
+        );
+
+        if (user) {
+          setLoggedInUser(user);
+          updateNavAuthUI();
+          closeModal("loginModal");
+        } else {
+          alert("Identifiants incorrects!");
+        }
+      });
+
+      // Initialize UI
+      updateNavAuthUI();
+    });
 
   /*** === Gestion du classement dynamique === ***/
 
@@ -667,182 +948,6 @@ function afficherSkieurs() {
     // const sections = document.querySelectorAll("main section");
     // sections.forEach(s => s.style.display = s.id === valeur ? "block" : "none");
   });
-
-
-  /*** === Gestion des modales === ***/
-
-  const loginModal = document.getElementById("loginModal");
-  const signupModal = document.getElementById("signupModal");
-  const loginBtn = document.getElementById("loginBtn");
-  const logoutBtn = document.getElementById("logoutBtn");
-  const openLoginBtns = document.querySelectorAll("[data-open='loginModal']");
-  const openSignupBtns = document.querySelectorAll("[data-open='signupModal']");
-  const closeButtons = document.querySelectorAll(".close");
-
-  // Ouvrir modale login
-  openLoginBtns.forEach(btn => {
-    btn.addEventListener("click", e => {
-      e.preventDefault();
-      loginModal.style.display = "flex";
-    });
-  });
-
-  // Ouvrir modale signup
-  openSignupBtns.forEach(btn => {
-    btn.addEventListener("click", e => {
-      e.preventDefault();
-      signupModal.style.display = "flex";
-    });
-  });
-
-  // Fermer modales (croix)
-  closeButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      btn.closest(".modal").style.display = "none";
-    });
-  });
-
-  // Fermer modale au clic hors contenu
-  window.addEventListener("click", e => {
-    if (e.target.classList.contains("modal")) {
-      e.target.style.display = "none";
-    }
-  });
-
-
-  /*** === Gestion Authentification simple localStorage === ***/
-
-  let users = JSON.parse(localStorage.getItem("users")) || [];
-  let currentUser = localStorage.getItem("currentUser");
-
-  const loginForm = document.getElementById("loginForm");
-  const signupForm = document.getElementById("registerForm");
-  const loginError = document.getElementById("loginError");
-  const signupError = document.getElementById("registerError");
-
-  // Mettre à jour l'UI boutons selon état connecté
-  function updateUIAuth() {
-    if (currentUser) {
-      loginBtn.style.display = "none";
-      logoutBtn.style.display = "inline-block";
-      afficherEquipesSauvegardees(currentUser);
-    } else {
-      loginBtn.style.display = "inline-block";
-      logoutBtn.style.display = "none";
-      clearEquipeDisplay();
-    }
-  }
-
-  // Vérifie si username existe
-  function userExists(username) {
-    return users.some(u => u.username === username);
-  }
-
-  // Sauvegarder nouvel utilisateur
-  function saveUser(username, password) {
-    users.push({ username, password });
-    localStorage.setItem("users", JSON.stringify(users));
-  }
-
-  // Affiche les équipes sauvegardées de l'utilisateur
-  function afficherEquipesSauvegardees(user) {
-    const equipes = JSON.parse(localStorage.getItem(`equipes_${user}`)) || [];
-    const equipeContainer = document.getElementById("equipeContainer");
-    if (!equipeContainer) return;
-
-    equipeContainer.innerHTML = "";
-    if (equipes.length === 0) {
-      equipeContainer.textContent = "Aucune équipe sauvegardée.";
-      return;
-    }
-
-    equipes.forEach(equipe => {
-      const div = document.createElement("div");
-      div.textContent = `Équipe : ${equipe.nom}`;
-      equipeContainer.appendChild(div);
-    });
-  }
-
-  function clearEquipeDisplay() {
-    const equipeContainer = document.getElementById("equipeContainer");
-    if (equipeContainer) equipeContainer.innerHTML = "";
-  }
-
-  // Gestion formulaire inscription
-  if (signupForm) {
-    signupForm.addEventListener("submit", e => {
-      e.preventDefault();
-      signupError.style.display = "none";
-      signupError.textContent = "";
-
-      const username = document.getElementById("regUsername").value.trim();
-      const password = document.getElementById("regPassword").value;
-      const confirm = document.getElementById("confirmPassword").value;
-
-      if (userExists(username)) {
-        signupError.style.display = "block";
-        signupError.textContent = "Nom d'utilisateur déjà pris.";
-        return;
-      }
-
-      if (password !== confirm) {
-        signupError.style.display = "block";
-        signupError.textContent = "Les mots de passe ne correspondent pas.";
-        return;
-      }
-
-      saveUser(username, password);
-      signupModal.style.display = "none";
-      alert("Compte créé avec succès ! Connectez-vous.");
-      signupForm.reset();
-    });
-  }
-
-  // Gestion formulaire connexion
-  if (loginForm) {
-    loginForm.addEventListener("submit", e => {
-      e.preventDefault();
-      loginError.style.display = "none";
-      loginError.textContent = "";
-
-      const username = document.getElementById("username").value.trim();
-      const password = document.getElementById("password").value;
-
-      if (!userExists(username)) {
-        loginError.style.display = "block";
-        loginError.textContent = "Compte inexistant, veuillez vous inscrire.";
-        return;
-      }
-
-      const user = users.find(u => u.username === username);
-      if (user.password !== password) {
-        loginError.style.display = "block";
-        loginError.textContent = "Mot de passe incorrect.";
-        return;
-      }
-
-      currentUser = username;
-      localStorage.setItem("currentUser", currentUser);
-
-      loginModal.style.display = "none";
-      loginForm.reset();
-      updateUIAuth();
-    });
-  }
-
-  // Déconnexion
-  if (logoutBtn) {
-    logoutBtn.addEventListener("click", () => {
-      currentUser = null;
-      localStorage.removeItem("currentUser");
-      updateUIAuth();
-    });
-  }
-
-  // Initialiser affichage en fonction login
-  updateUIAuth();
-
-});
   </script>
 
 </body>
