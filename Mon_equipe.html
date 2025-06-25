@@ -367,63 +367,137 @@ tr:hover {
         font-size: 40px;
       }
 
- .modal {
-  display: none;
-  position: fixed;
-  z-index: 200;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.5);
-  align-items: center;
-  justify-content: center;
-}
+    .auth-links {
+      display: flex;
+      gap: 1.2rem;
+    }
 
-.modal-content {
-  background-color: #fff;
-  margin: auto;
-  padding: 30px;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 400px;
-  position: relative;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+    .auth-links a {
+      font-weight: 600;
+      color: var(--main-red);
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 2px solid var(--main-red);
+      border-radius: 30px;
+      transition: background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1rem;
+      white-space: nowrap;
+      box-shadow: 0 0 0 transparent;
+      cursor: pointer;
+    }
+    .auth-links a:hover,
+    .auth-links a:focus {
+      background-color: var(--main-red);
+      color: var(--white);
+      box-shadow: 0 4px 12px var(--main-red);
+      outline: none;
+      text-decoration: none;
+    }
 
-.modal-content h2 {
-  margin: 0;
-  color: var(--main-red);
-  text-align: center;
-}
+    /* User menu styles */
+    .user-menu {
+      position: relative;
+      display: inline-block;
+    }
 
-.modal-content label {
-  font-weight: 600;
-  margin-top: 10px;
-}
+    #user-menu-button {
+      background: none;
+      border: 2px solid var(--main-red);
+      color: var(--main-red);
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-family: var(--font-primary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      user-select: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-.modal-content input {
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  width: 100%;
-}
+    #user-menu-button:hover,
+    #user-menu-button:focus {
+      background-color: var(--main-red);
+      color: var(--white);
+      outline: none;
+    }
 
-.modal-content button {
-  background-color: var(--main-red);
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  margin-top: 1rem;
-}
+    #user-dropdown {
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: var(--white);
+      box-shadow: 0 5px 15px var(--shadow-color);
+      border-radius: 10px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      min-width: 160px;
+      z-index: 200;
+      display: none; /* Hidden by default */
+    }
+
+    #user-dropdown li {
+      border-bottom: 1px solid #eee;
+    }
+
+    #user-dropdown li:last-child {
+      border-bottom: none;
+    }
+
+    #user-dropdown a,
+    #user-dropdown button {
+      display: block;
+      padding: 12px 16px;
+      color: var(--main-red);
+      text-decoration: none;
+      font-weight: 600;
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      font-family: var(--font-primary);
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+
+    #user-dropdown a:hover,
+    #user-dropdown button:hover,
+    #user-dropdown a:focus,
+    #user-dropdown button:focus {
+      background-color: var(--main-red);
+      color: var(--white);
+      outline: none;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 200;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 30px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+      position: relative;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
 
 .modal-content button:hover {
   background-color: #c40810;
@@ -464,6 +538,31 @@ tr:hover {
     }
     .construction-alert i {
       font-size: 1.7rem;
+    }
+
+        /* Form styles */
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    form input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    form button {
+      background-color: var(--main-red);
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
     }
 
     /* FOOTER */
@@ -698,23 +797,22 @@ h6{
 </head>
 
 <body>
-
-  <!-- Top bar 1 -->
-  <header class="topbar1" role="banner" aria-label="Barre supérieure">
-    <div class="logo" aria-label="Nom du site Ski Alpin Fantasy 2026">
-      <i class="fas fa-mountain" aria-hidden="true"></i> Ski Alpin Fantasy 2026
+<header class="topbar1" role="banner" aria-label="Barre de navigation principale">
+  <div class="logo" aria-label="Logo Ski Alpin Fantasy">
+    <i class="fas fa-mountain"></i> Ski Alpin Fantasy 2026
+  </div>
+  <nav id="nav-auth">
+    <div class="auth-links">
+      <a href="#" id="openLogin"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+      <a href="#" id="openSignup"><i class="fas fa-user-plus"></i> Inscription</a>
     </div>
-    <nav class="auth-links" aria-label="Liens de connexion et inscription">
-      <a href="#" tabindex="0"><i class="fas fa-sign-in-alt" aria-hidden="true"></i> Connexion</a>
-      <a href="#" tabindex="0"><i class="fas fa-user-plus" aria-hidden="true"></i> Inscription</a>
-    
-    </nav>
-  </header>
+  </nav>
+</header>
 
   <!-- Top bar 2 - menu principal -->
   <nav class="topbar2" role="navigation" aria-label="Menu principal">
     <nav>
-      <a href="accueil.html"  tabindex="0"><i class="fas fa-home" aria-hidden="true"></i> Accueil</a>
+      <a href="index.html"  tabindex="0"><i class="fas fa-home" aria-hidden="true"></i> Accueil</a>
       <a href="classement_skieurs.html" tabindex="0"><i class="fas fa-chart-line" aria-hidden="true"></i> Classements Skieurs</a>
       <a href="#" tabindex="0"><i class="fas fa-users" aria-hidden="true"></i> Classements Joueurs</a>
       <a href="#Mon_equipe.html" class="active" tabindex="0"><i class="fas fa-user" aria-hidden="true"></i> Mon Équipe</a>
@@ -786,8 +884,21 @@ h6{
                     </div>
                 </div>
                 <button id="save-button">Sauvegarder l'équipe</button>
-                <script src="script_2.js"></script>
-                <script src="auth.js"></script>
+                <div id="save-confirmation" style="
+                position: fixed;
+                bottom: 60%;
+                right: 40%;
+                background-color: #bf4a3b;
+                color: white;
+                padding: 12px 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+                font-weight: bold;
+                display: none;
+                z-index: 1000;
+                ">
+                ✔  Équipe sauvegardée avec succès !
+              </div>
                 <br>
                 <br>
                 <br>
@@ -808,91 +919,606 @@ h6{
     &copy; 2026 Ski Alpin Fantasy. Tous droits réservés.
   </footer>
 
- <!-- MODALES -->
-<div id="loginModal" class="modal">
-  <div class="modal-content">
-    <span class="close" data-close="loginModal">&times;</span>
-    <h2>Connexion</h2>
-    <form>
-      <label for="login-email">Email :</label>
-      <input type="email" id="login-email" required />
-      <label for="login-password">Mot de passe :</label>
-      <input type="password" id="login-password" required />
-      <button type="submit">Se connecter</button>
-    </form>
-  </div>
-</div>
-
-<div id="signupModal" class="modal">
-  <div class="modal-content">
-    <span class="close" data-close="signupModal">&times;</span>
-    <h2>Inscription</h2>
-    <form>
-      <label for="signup-email">Email :</label>
-      <input type="email" id="signup-email" required />
-      <label for="signup-password">Mot de passe :</label>
-      <input type="password" id="signup-password" required />
-      <label for="signup-confirm">Confirmez le mot de passe :</label>
-      <input type="password" id="signup-confirm" required />
-      <button type="submit">S'inscrire</button>
-    </form>
-  </div>
-</div>
-
-  <!-- Fenêtre modale pour l'enregistrement -->
- <div class="modal" id="loginModal">
-  <div class="modal-content">
-    <span class="close" data-close="loginModal">&times;</span>
-    <h2>Connexion</h2>
-    <input type="text" placeholder="Nom d'utilisateur" />
-    <input type="password" placeholder="Mot de passe" />
-    <button>Se connecter</button>
-  </div>
-</div>
-
-<!-- Fenêtre modale - Inscription -->
-<div class="modal" id="signupModal">
-  <div class="modal-content">
-    <span class="close" data-close="signupModal">&times;</span>
-    <h2>Inscription</h2>
-    <input type="text" placeholder="Nom d'utilisateur" />
-    <input type="email" placeholder="Email" />
-    <input type="password" placeholder="Mot de passe" />
-    <button>Créer un compte</button>
-  </div>
-</div>
-        </form>
+<!-- MODALE CONNEXION -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" data-close="loginModal">&times;</span>
+      <h2>Connexion</h2>
+      <form id="loginForm">
+        <label>Pseudo : <input type="text" name="username" required></label>
+        <label>Mot de passe : <input type="password" name="password" required></label>
+        <button type="submit">Se connecter</button>
+      </form>
     </div>
-</div>
-</body>
-<script>
-  document.querySelectorAll('.auth-links a').forEach(link => {
-    link.addEventListener('click', e => {
+  </div>
+
+  <!-- MODALE INSCRIPTION -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close" data-close="signupModal">&times;</span>
+      <h2>Inscription</h2>
+      <form id="signupForm">
+        <label>Pseudo : <input type="text" name="username" required></label>
+        <label>Email : <input type="email" name="email" required></label>
+        <label>Mot de passe : <input type="password" name="password" required></label>
+        <label>Confirmez : <input type="password" name="confirmPassword" required></label>
+        <button type="submit">Créer un compte</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <script>
+// ================================
+// Script complet - Fantasy Ski App
+// ================================
+
+// -------- Variables globales --------
+let currentPage = 1;
+const skiersPerPage = 18;
+let skiersData = [];
+let filteredSkiers = [];
+let selectedSkiers = [];
+const maxSelections = 8;
+const maxPerNationality = 2;
+let totalBudget = 80;
+let remainingBudget = totalBudget;
+const budgetElement = document.getElementById("remaining-budget");
+const totalBudgetElement = document.getElementById("total-budget");
+
+// -------- Connexion --------
+ document.addEventListener("DOMContentLoaded", () => {
+      // Modal functions
+      function openModal(id) {
+        document.getElementById(id).style.display = "block";
+      }
+  
+      function updateUIAfterLogin() {
+        // Supposons que cette fonction devait faire ça :
+        updateNavAuthUI();
+        }
+
+    updateUIAfterLogin();
+    loadSkiers();
+    if (!document.getElementById("discipline-error")) {
+        const err = document.createElement("div");
+        err.id = "discipline-error";
+        err.style.display = "none";
+        err.className = "discipline-error-container";
+        document.body.appendChild(err);
+    }
+    document.getElementById("save-button")?.addEventListener("click", saveTeam);
+
+      function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+
+      // User management
+      function getUsers() {
+        return JSON.parse(localStorage.getItem("fantasy_users")) || [];
+      }
+
+      function saveUsers(users) {
+        localStorage.setItem("fantasy_users", JSON.stringify(users));
+      }
+
+      function getLoggedInUser() {
+        return JSON.parse(localStorage.getItem("loggedInUser"));
+      }
+
+      function setLoggedInUser(user) {
+        localStorage.setItem("loggedInUser", JSON.stringify(user));
+      }
+
+      function logout() {
+        localStorage.removeItem("loggedInUser");
+        updateNavAuthUI();
+      }
+
+      // Update navigation based on login state
+function updateNavAuthUI() {
+  const nav = document.getElementById("nav-auth");
+  const user = getLoggedInUser();
+
+  if (user) {
+    // User is logged in - show dropdown
+    nav.innerHTML = `
+      <div class="user-menu">
+        <button id="user-menu-button">${user.username} <i class="fas fa-caret-down"></i></button>
+        <ul id="user-dropdown">
+          <li><a href="Mon Compte.html">Mon Compte</a></li>
+          <li><a href="Paramètres.html"><button id="settingsBtn">Paramètres</button></li>
+          <li><button id="logoutBtn">Déconnexion</button></li>
+        </ul>
+      </div>
+    `;
+
+    // Add dropdown toggle
+    const userButton = document.getElementById("user-menu-button");
+    const dropdown = document.getElementById("user-dropdown");
+    
+    userButton.addEventListener("click", () => {
+      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    });
+
+    // Add logout
+    document.getElementById("logoutBtn").addEventListener("click", (e) => {
       e.preventDefault();
-      const text = link.textContent.toLowerCase();
-      if (text.includes('connexion')) {
-        document.getElementById('loginModal').style.display = 'block';
-      } else if (text.includes('inscription')) {
-        document.getElementById('signupModal').style.display = 'block';
-      }
+      logout();
+      resetSelection();    // <-- VIDE la sélection à la déconnexion
     });
+
+    // Charge l'équipe sauvegardée au moment de la connexion
+    loadSavedTeam();
+
+  } else {
+    // User is not logged in - show auth links
+    nav.innerHTML = `
+      <div class="auth-links">
+        <a href="#" id="openLogin"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+        <a href="#" id="openSignup"><i class="fas fa-user-plus"></i> Inscription</a>
+      </div>
+    `;
+
+    // Add modal openers
+    document.getElementById("openLogin").addEventListener("click", (e) => {
+      e.preventDefault();
+      openModal("loginModal");
+    });
+
+    document.getElementById("openSignup").addEventListener("click", (e) => {
+      e.preventDefault();
+      openModal("signupModal");
+    });
+
+    // Vide la sélection si on est déconnecté
+    resetSelection();
+  }
+}
+
+      // Close modals when clicking outside
+      window.addEventListener("click", (e) => {
+        if (e.target.classList.contains("modal")) {
+          closeModal(e.target.id);
+        }
+      });
+
+      // Close modals with X button
+      document.querySelectorAll(".close").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          closeModal(btn.dataset.close);
+        });
+      });
+
+      // Signup form
+      document.getElementById("signupForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        
+        const username = e.target.username.value.trim();
+        const email = e.target.email.value.trim();
+        const password = e.target.password.value;
+        const confirmPassword = e.target.confirmPassword.value;
+
+        if (password !== confirmPassword) {
+          alert("Les mots de passe ne correspondent pas!");
+          return;
+        }
+
+        const users = getUsers();
+        
+        if (users.some(user => user.username === username)) {
+          alert("Ce pseudo est déjà pris!");
+          return;
+        }
+
+        users.push({ username, email, password });
+        saveUsers(users);
+        
+        alert("Compte créé avec succès! Vous pouvez maintenant vous connecter.");
+        closeModal("signupModal");
+        openModal("loginModal");
+      });
+
+      // Login form
+      document.getElementById("loginForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        
+        const username = e.target.username.value.trim();
+        const password = e.target.password.value;
+        const users = getUsers();
+
+        const user = users.find(user => 
+          user.username === username && 
+          user.password === password
+        );
+
+        if (user) {
+          setLoggedInUser(user);
+          updateNavAuthUI();
+          closeModal("loginModal");
+        } else {
+          alert("Identifiants incorrects!");
+        }
+      });
+
+      // Initialize UI
+      updateNavAuthUI();
+    });
+
+// -------- Chargement des skieurs --------
+async function loadSkiers() {
+    try {
+        const response = await fetch("output.json");
+        if (!response.ok) throw new Error("Erreur lors du chargement des skieurs.");
+        skiersData = await response.json();
+        populateNationalityFilter();
+        loadPage(currentPage);
+        loadSavedTeam();
+    } catch (error) {
+        console.error("Erreur de chargement :", error);
+    }
+}
+
+function populateNationalityFilter() {
+    const nationalities = [...new Set(skiersData.map(skier => skier.nationality))];
+    const filter = document.getElementById("nationality-filter");
+    filter.innerHTML = '<option value="">-- Filtrer par nationalité --</option>';
+    nationalities.forEach(nationality => {
+        const option = document.createElement("option");
+        option.value = nationality;
+        option.textContent = nationality;
+        filter.appendChild(option);
+    });
+}
+
+function loadSavedTeam() {
+  const currentUser = getLoggedInUser();
+    if (!currentUser || !currentUser.username) return;
+
+    const userKey = `selectedTeam_${currentUser.username}`;
+    const savedTeam = JSON.parse(localStorage.getItem(userKey));
+    if (savedTeam) {
+        selectedSkiers = savedTeam.map(skier => ({
+            ...skier,
+            Price: parseFloat(skier.Price) || 0
+        }));
+        remainingBudget = totalBudget - selectedSkiers.reduce((total, skier) => total + skier.Price, 0);
+        remainingBudget = Math.max(remainingBudget, 0);
+        updateRemainingBudget();
+        updateSelectedBoxes();
+    }
+}
+
+function loadPage(page) {
+  const container = document.getElementById("skier-info");
+  if (!container) return;
+  container.innerHTML = "";
+
+    const fragment = document.createDocumentFragment();
+    const skiersToShow = filteredSkiers.length ? filteredSkiers : skiersData;
+    const startIndex = (page - 1) * skiersPerPage;
+    const pageData = skiersToShow.slice(startIndex, startIndex + skiersPerPage);
+
+    pageData.forEach(skier => {
+        const card = document.createElement("div");
+        card.className = "skier-card";
+        const flagPath = `flags/${skier.nationality.toLowerCase()}.png`;
+        card.innerHTML = `
+            <div class="skier-card-content">
+                <div class="skier-info">
+                    <img src="${flagPath}" alt="${skier.nationality} flag">
+                    <h4>${skier.firstName} ${skier.lastName}</h4>
+                    <p>Age: ${skier.age}</p>
+                    <p>Disciplines: ${skier.disciplines.join(", ")}</p>
+                    <a href="${skier.lien}" target="_blank" class="see-more-link" onclick="event.stopPropagation()">Voir plus</a>
+                </div>
+                <div class="skier-price">
+                    <span>${skier.Price}</span>
+                </div>
+            </div>
+        `;
+        card.onclick = () => selectSkier(skier);
+        fragment.appendChild(card);
+    });
+
+    container.appendChild(fragment);
+    updatePaginationButtons();
+}
+
+function selectSkier(skier) {
+    const skierIndex = selectedSkiers.findIndex(
+        s => s.firstName === skier.firstName && s.lastName === skier.lastName
+    );
+
+    if (skierIndex !== -1) {
+        deselectSkier(skierIndex);
+        return;
+    }
+
+    if (selectedSkiers.length >= maxSelections) {
+        alert("Nombre maximal de skieurs atteint.");
+        return;
+    }
+
+    const skierCountByNationality = selectedSkiers.filter(
+        s => s.nationality === skier.nationality
+    ).length;
+
+    if (skierCountByNationality >= maxPerNationality) {
+        alert(`Limite atteinte pour la nationalité ${skier.nationality}`);
+        return;
+    }
+
+    const skierPrice = parseFloat(skier.Price);
+    if (remainingBudget < skierPrice) {
+        alert("Budget insuffisant.");
+        return;
+    }
+
+    selectedSkiers.push(skier);
+    remainingBudget -= skierPrice;
+
+    updateSelectedBoxes();
+    updateRemainingBudget();
+    persistTeam();
+}
+
+function updateRemainingBudget() {
+    budgetElement.innerText = `Budget restant : ${remainingBudget}`;
+}
+
+function updateSelectedBoxes() {
+    const boxes = document.querySelectorAll(".box");
+
+    boxes.forEach((box, index) => {
+        if (selectedSkiers[index]) {
+            const skier = selectedSkiers[index];
+            const flagPath = `flags/${skier.nationality.toLowerCase()}.png`;
+
+            box.classList.add("selected");
+            box.innerHTML = `
+                <img src="${flagPath}" alt="Flag">
+                <p>${skier.firstName} ${skier.lastName}</p>
+            `;
+            box.onclick = () => deselectSkier(index);
+        } else {
+            box.classList.remove("selected");
+            box.innerHTML = `<img src="icons/person.png" alt="person icon"><p>Sélectionner un skieur</p>`;
+            box.onclick = () => openSkierList(box);
+        }
+    });
+}
+
+function deselectSkier(skierIndex) {
+    const skier = selectedSkiers[skierIndex];
+    if (!skier) return;
+
+    remainingBudget += parseFloat(skier.Price) || 0;
+    selectedSkiers.splice(skierIndex, 1);
+
+    updateRemainingBudget();
+    updateSelectedBoxes();
+    persistTeam();
+}
+
+function openSkierList(box) {
+    if (!box.classList.contains("selected")) {
+        document.getElementById("filters").classList.remove("hidden");
+        document.getElementById("skier-list").classList.remove("hidden");
+    }
+}
+
+function resetSelection() {
+    selectedSkiers = [];
+    remainingBudget = totalBudget;
+    document.querySelectorAll('.skier-card').forEach(card => {
+        card.classList.remove('selected');
+    });
+    updateRemainingBudget();
+    updateSelectedBoxes();
+}
+
+function persistTeam() {
+    const currentUser = getLoggedInUser();
+ if (!currentUser || !currentUser.username) return;
+    const userKey = `selectedTeam_${currentUser.username}`;
+    localStorage.setItem(userKey, JSON.stringify(selectedSkiers));
+}
+
+function updatePaginationButtons() {
+    const totalPages = Math.ceil((filteredSkiers.length || skiersData.length) / skiersPerPage);
+    document.getElementById("current-page").textContent = `Page ${currentPage}`;
+    document.getElementById("prev-page").disabled = currentPage === 1;
+    document.getElementById("next-page").disabled = currentPage === totalPages;
+}
+
+function nextPage() {
+    const totalPages = Math.ceil((filteredSkiers.length || skiersData.length) / skiersPerPage);
+    if (currentPage < totalPages) {
+        currentPage++;
+        loadPage(currentPage);
+    }
+}
+
+function prevPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        loadPage(currentPage);
+    }
+}
+
+function applyFilters() {
+    const searchQuery = document.getElementById("search-bar").value.toLowerCase();
+    const selectedDiscipline = document.getElementById("discipline-filter").value;
+    const selectedNationality = document.getElementById("nationality-filter").value;
+    const ageFilter = document.getElementById("age-filter").value;
+    const minPrice = parseFloat(document.getElementById("price-filter-min").value) || 5;
+    const maxPrice = parseFloat(document.getElementById("price-filter-max").value) || 20;
+
+    filteredSkiers = skiersData.filter(skier => {
+        const matchesSearch = `${skier.firstName} ${skier.lastName}`.toLowerCase().includes(searchQuery);
+        const matchesDiscipline = selectedDiscipline ? skier.disciplines.includes(selectedDiscipline) : true;
+        const matchesNationality = selectedNationality ? skier.nationality === selectedNationality : true;
+        const matchesAge = ageFilter ? skier.age === parseInt(ageFilter) : true;
+        const skierPrice = parseFloat(skier.Price);
+        const matchesPrice = skierPrice >= minPrice && skierPrice <= maxPrice;
+
+        return matchesSearch && matchesDiscipline && matchesNationality && matchesAge && matchesPrice;
+    });
+
+    currentPage = 1;
+    loadPage(currentPage);
+}
+
+function searchSkiers() {
+    applyFilters();
+}
+
+function hasDisciplineCoverage(skiers) {
+  const requiredDisciplines = ["DH", "SG", "GS", "SL"];
+  const disciplinesCovered = new Set();
+
+  skiers.forEach(skier => {
+    if (Array.isArray(skier.disciplines)) {
+      skier.disciplines.forEach(d => {
+        const cleaned = d.trim().toUpperCase();
+        disciplinesCovered.add(cleaned);
+      });
+    }
   });
 
-  document.querySelectorAll('.close').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const modalId = btn.getAttribute('data-close');
-      document.getElementById(modalId).style.display = 'none';
-    });
+  return requiredDisciplines.every(d => disciplinesCovered.has(d));
+}
+
+function getMissingDisciplines(skiers) {
+  const required = ["DH", "SG", "GS", "SL"];
+  const covered = new Set();
+
+  skiers.forEach(s => {
+    if (Array.isArray(s.disciplines)) {
+      s.disciplines.forEach(d => covered.add(d.trim().toUpperCase()));
+    }
   });
 
-  window.addEventListener('click', e => {
-    document.querySelectorAll('.modal').forEach(modal => {
-      if (e.target === modal) {
-        modal.style.display = 'none';
-      }
-    });
-  });
-</script>
+  return required.filter(d => !covered.has(d));
+}
 
-</html> 
+function showDisciplineError(missing) {
+    const container = document.getElementById("discipline-error");
+    if (!container) return;
+    container.innerHTML = `<p class='error-msg'>Vous devez sélectionner un skieur pour chaque discipline. Manquant : ${missing.join(", ")}</p>`;
+    container.style.display = "block";
+}
 
+function hideDisciplineError() {
+    const container = document.getElementById("discipline-error");
+    if (container) {
+        container.innerHTML = "";
+        container.style.display = "none";
+    }
+}
+function showDisciplineError(missing) {
+  const container = document.getElementById("discipline-error");
+  if (!container) return;
+
+  container.innerHTML = `<p class='error-msg'>⚠ Vous devez sélectionner au moins un skieur pour chaque discipline. Disciplines manquantes : <strong>${missing.join(", ")}</strong></p>`;
+  container.style.display = "block";
+
+  // Positionne le message au centre haut de l'écran
+  container.style.position = "fixed";
+  container.style.top = "20%";
+  container.style.left = "50%";
+  container.style.transform = "translateX(-50%)";
+  container.style.backgroundColor = "#f8d7da";
+  container.style.color = "#721c24";
+  container.style.padding = "10px 20px";
+  container.style.border = "1px solid #f5c6cb";
+  container.style.borderRadius = "8px";
+  container.style.zIndex = "9999";
+
+  // Disparition automatique après 5 secondes
+  setTimeout(() => {
+    container.style.display = "none";
+  }, 5000);
+}
+
+function saveTeam() {
+  const currentUser = getLoggedInUser();
+
+  if (!currentUser || !currentUser.username) {
+    alert("Vous devez être connecté pour sauvegarder votre équipe.");
+    return;
+  }
+
+  console.log("Utilisateur connecté :", currentUser.username);
+  console.log("Skieurs sélectionnés :", selectedSkiers);
+
+  if (!hasDisciplineCoverage(selectedSkiers)) {
+    const missing = getMissingDisciplines(selectedSkiers);
+    showDisciplineError(missing);
+    return;
+  } else {
+    hideDisciplineError();
+  }
+
+  if (selectedSkiers.length === 0) {
+    alert("Aucun skieur n'a été sélectionné.");
+    return;
+  }
+
+  const userKey = `selectedTeam_${currentUser.username}`;
+  localStorage.setItem(userKey, JSON.stringify(selectedSkiers));
+  console.log("Équipe sauvegardée avec succès :", localStorage.getItem(userKey));
+  alert("Votre équipe a été sauvegardée !");
+}
+function getLoggedInUser() {
+  return JSON.parse(localStorage.getItem("loggedInUser"));
+}
+
+function setLoggedInUser(user) {
+  localStorage.setItem("loggedInUser", JSON.stringify(user));
+}
+
+function getUsers() {
+  return JSON.parse(localStorage.getItem("fantasy_users")) || [];
+}
+
+function saveUsers(users) {
+  localStorage.setItem("fantasy_users", JSON.stringify(users));
+}
+
+function logout() {
+  localStorage.removeItem("loggedInUser");
+  updateNavAuthUI();
+}
+function showSaveConfirmation() {
+  const confirmation = document.getElementById("save-confirmation");
+  confirmation.style.display = "block";
+  setTimeout(() => {
+    confirmation.style.display = "none";
+  }, 3000); // Masquer le message après 3 secondes
+}
+
+function saveTeam() {
+  const currentUser = getLoggedInUser();
+  if (!currentUser || !currentUser.username) {
+    alert("Vous devez être connecté pour sauvegarder votre équipe.");
+    return;
+  }
+
+  if (!hasDisciplineCoverage(selectedSkiers)) {
+    const missing = getMissingDisciplines(selectedSkiers);
+    showDisciplineError(missing);
+    return;
+  } else {
+    hideDisciplineError();
+  }
+
+  const userKey = `selectedTeam_${currentUser.username}`;
+  localStorage.setItem(userKey, JSON.stringify(selectedSkiers));
+
+  showSaveConfirmation();
+}
+  </script>
+</html>
