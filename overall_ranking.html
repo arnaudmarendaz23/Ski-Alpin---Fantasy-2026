@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Here we parameter the language of the website-->
+<html lang="eng">
+    <!--Then we create the head, wit a titel, a navigation panel and the text associated and the link of the other pages -->
+    <head>
+        <meta charset="utf-8">
+        <title>Fantasy Ranking</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <nav>
+        <div class="topnav">
+            <img src="Image/Alpine Ski Racing Logo.jpg" alt="Logo" class="nav-logo">
+            <a href="index.html">
+                <img src="icons/home.png" alt="Home" class="nav-icon"> Accueil
+            </a>
+            <a href="Fantasy.html">
+                <img src="icons/fantasy.png" alt="Fantasy" class="nav-icon"> Mon équipe
+            </a>
+            <a href="Leadership-board.html">
+                <img src="icons/skier_ranking.png" alt="Skier Rankings" class="nav-icon"> Classement FIS
+            </a>
+            <a class="active" href="overall_ranking.html">
+                <img src="icons/overall_ranking.png" alt="Fantasy Ranking" class="nav-icon"> Classement Fantasy
+            </a>
+            <a href="about.html">
+                <img src="icons/about us.png" alt="About Us" class="nav-icon"> À propos
+            </a>
+            <a href="rules.html">
+                <img src="icons/rules.png" alt="Rules" class="nav-icon"> Règles
+            </a>
+            <div class="login-container">
+                <a href="#login" id="loginBtn" class="login-link">
+                    <img src="icons/connexion.png" alt="Login" class="nav-icon-login">
+                </a>
+                <a href="#login" id="logoutBtn" class="login-link" style="display: none;">
+                    <img src="icons/connected.png" alt="Logout" class="nav-icon-login">
+                </a>
+            </div>
+        </div>
+    </nav>
+      
+      <!-- Fenêtre modale pour la connexion -->
+      <div id="loginModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Connexion</h2>
+              <form id="loginForm">
+                  <label for="username">Nom d'utilisateur :</label>
+                  <input type="text" id="username" name="username" required>
+                  <label for="password">Mot de passe :</label>
+                  <input type="password" id="password" name="password" required>
+                  <button type="submit">Envoyer</button>
+                  <p>Pas de compte ? <a href="#" id="registerLink">S'enregistrer</a></p>
+              </form>
+          </div>
+      </div>
+      
+      <!-- Fenêtre modale pour l'enregistrement -->
+      <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Enregistrement</h2>
+            <form id="registerForm">
+                <div>
+                    <label for="regUsername">Nom d'utilisateur :</label>
+                    <input type="text" id="regUsername" required>
+                </div>
+                <div>
+                    <label for="regPassword">Mot de passe :</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirmer mot de passe :</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <div id="registerError" style="color: red; display: none;"></div>
+                <button type="submit">Enregistrer</button>
+            </form>
+        </div>
+    </div>
+        </a>
+    </div>
+</nav>
+
+    <body>
+        <main>
+            <h1>Classement Fantasy</h1>
+            <script src="script.js"></script>
+            <script src="auth.js"></script>
+        </main>
+        <nav>
+
+        </nav>    
+        <footer class="footer">
+            <a href="https://www.instagram.com/fisalpine/">Instagram</a><br>
+            <a href="https://www.facebook.com/fisalpine">Facebook</a><br>
+            <a href="https://x.com/fisalpine">X</a><br>
+        </footer>
+    </body>

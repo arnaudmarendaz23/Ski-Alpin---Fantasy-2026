@@ -188,13 +188,6 @@
       align-items: center;
     }
 
-    .hero h1 {
-      font-size: 4.5rem;
-      font-weight: 900;
-      margin-bottom: 0.5rem;
-      text-shadow: 3px 3px 15px #000000dd;
-    }
-
     .hero p {
       font-size: 1.7rem;
       font-weight: 500;
@@ -237,103 +230,6 @@
       max-width: 520px;
       margin: 0 auto;
     }
-
-#articles {
-    list-style-type: none;
-    padding: 0;
-    display: flex; /* Disposer les articles en flex */
-    flex-wrap: wrap; /* Pour gérer le passage à la ligne */
-    justify-content: space-evenly; /* Espacement entre les éléments */
-}
-
-.article-item {
-  width: 300px;
-  margin: 20px;
-  text-align: left;
-  background: #fff;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-.article-item h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #333;
-  padding: 16px 20px 10px;
-  transition: color 0.3s ease;
-}
-
-.article-item h3 a:hover {
-  color: #000;
-}
-
-.article-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-}
-
-
-.article-item img {
-  height: 180px;
-  object-fit: cover;
-  width: 100%;
-  transition: transform 0.3s ease;
-}
-
-.article-item h3 a:hover {
-  color: #000;
-}
-
-.article-item:hover img {
-  transform: scale(1.05);
-}
-
-/* Ajout d'un effet de clic (optionnel) */
-.article-item:active {
-    transform: scale(1.02); /* Réduit l'effet de zoom au clic */
-}
-
-.scrollable {
-  width: 95%;
-  margin: 40px auto;
-  overflow-x: auto;
-  border-radius: 16px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-  background-color: #fff;
-}
-  
-table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 600px;
-}
-  
-th {
-  background-color: var(--main-red);
-  color: #fff;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 14px 20px;
-}
-
-td {
-  padding: 14px 20px;
-  font-size: 1.05rem;
-  border-bottom: 1px solid #eee;
-}
-
-  
-tr:nth-child(even) {
-        background-color: #f9f9f9;
-      }
-  
-tr:hover {
-  background-color: #fafafa;
-}
   
 .details {
         background-color: #e9ecef;
@@ -614,6 +510,84 @@ tr:hover {
         font-size: 1.1rem;
       }
     }
+.container {
+  max-width: 800px;
+  margin: 3rem auto;
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.container h1 {
+  text-align: center;
+  color: #e50914;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 10px 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #e50914;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.rank {
+  font-weight: bold;
+}
+
+tr.top-1 td {
+  background: gold !important;
+  color: #000;
+}
+tr.top-2 td {
+  background: silver !important;
+  color: #000;
+}
+tr.top-3 td {
+  background: #cd7f32 !important;
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead {
+    display: none;
+  }
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #e50914;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+  </style>
+  </style>
   </style>
 </head>
 
@@ -633,92 +607,33 @@ tr:hover {
   <!-- Top bar 2 - menu principal -->
   <nav class="topbar2" role="navigation" aria-label="Menu principal">
     <nav>
-      <a href="index.html" class="active" tabindex="0"><i class="fas fa-home" aria-hidden="true"></i> Accueil</a>
+      <a href="index.html" tabindex="0"><i class="fas fa-home" aria-hidden="true"></i> Accueil</a>
       <a href="classement_skieurs.html" tabindex="0"><i class="fas fa-chart-line" aria-hidden="true"></i> Classements Skieurs</a>
-      <a href="classement_joueur.html" tabindex="0"><i class="fas fa-users" aria-hidden="true"></i> Classements Joueurs</a>
+      <a href="classement_joueur" class="active" tabindex="0"><i class="fas fa-users" aria-hidden="true"></i> Classements Joueurs</a>
       <a href="Mon_equipe.html" tabindex="0"><i class="fas fa-user" aria-hidden="true"></i> Mon Équipe</a>
       <a href="#" tabindex="0"><i class="fas fa-book" aria-hidden="true"></i> Règles</a>
       <a href="#" tabindex="0"><i class="fas fa-info-circle" aria-hidden="true"></i> À propos</a>
     </nav>
   </nav>
+<div class="container">
+  <h1><i class="fas fa-users"></i> Classement des Joueurs</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Rang</th>
+        <th>Nom d'utilisateur</th>
+        <th>Points</th>
+      </tr>
+    </thead>
+    <tbody id="ranking-table">
+      <tr><td colspan="3">Chargement...</td></tr>
+    </tbody>
+  </table>
+</div>
 
-  <!-- Section Hero -->
-  <section class="hero" aria-label="Bienvenue sur Ski Alpin Fantasy 2026">
-    <h1>Bienvenue sur Ski Alpin Fantasy 2026</h1>
-    <p>Plongez dans l'univers palpitant du ski alpin et créez votre équipe de rêve !</p>
-  </section>
-
-  <!-- Section Fonctionnalités -->
-  <section class="section" aria-labelledby="section-fonctionnalites">
-    <h2 id="section-fonctionnalites">Fonctionnalités du site</h2>
-    <p>Découvrez toutes les options disponibles pour suivre, gérer et optimiser votre expérience Fantasy Ski.</p>
-
-    <div class="construction-alert" role="alert" aria-live="polite" aria-atomic="true">
-      <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
-      Ce site est encore en construction, merci de votre patience !
-    </div>
-  </section>
-
-         <h2 class="subtitle_2">Calendrier des courses</h2>
-            <div class="scrollable">
-              <table id="courses-table">
-                <thead>
-                  <tr>
-                    <th>Date</th>
-                    <th>Pays</th>
-                    <th>Ville</th>
-                    <th>Disciplines</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- Les données sont insérées ici via JavaScript -->
-                </tbody>
-              </table>
-            </div>
-            <h2 class="subtitle">Derniers Articles RTS</h2>
-            <div id="articles-container">
-                <div id="articles"></div>
-            </div>
-              <script src="script.js"></script>
-        </main> 
-
-  <footer>
-    &copy; 2026 Ski Alpin Fantasy. Tous droits réservés.
-  </footer>
-
-<!-- MODALE CONNEXION -->
-  <div id="loginModal" class="modal">
-    <div class="modal-content">
-      <span class="close" data-close="loginModal">&times;</span>
-      <h2>Connexion</h2>
-      <form id="loginForm">
-        <label>Pseudo : <input type="text" name="username" required></label>
-        <label>Mot de passe : <input type="password" name="password" required></label>
-        <button type="submit">Se connecter</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- MODALE INSCRIPTION -->
-  <div id="signupModal" class="modal">
-    <div class="modal-content">
-      <span class="close" data-close="signupModal">&times;</span>
-      <h2>Inscription</h2>
-      <form id="signupForm">
-        <label>Pseudo : <input type="text" name="username" required></label>
-        <label>Email : <input type="email" name="email" required></label>
-        <label>Mot de passe : <input type="password" name="password" required></label>
-        <label>Confirmez : <input type="password" name="confirmPassword" required></label>
-        <button type="submit">Créer un compte</button>
-      </form>
-    </div>
-  </div>
-
-    <script type="module">
-    // Firebase v9 modular
+  <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
-    import { getFirestore, collection, doc, setDoc, getDoc, getDocs, query, where } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
+    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
 
     const firebaseConfig = {
       apiKey: "AIzaSyCMlaFn8hmIsWpgbce4Vlf08NtJm1Enj6c",
@@ -730,114 +645,42 @@ tr:hover {
     };
 
     const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
     const db = getFirestore(app);
 
-    const loginForm = document.getElementById("loginForm");
-    const signupForm = document.getElementById("signupForm");
+    const tableBody = document.getElementById("ranking-table");
 
-async function updateUI(user) {
-  const nav = document.getElementById("nav-auth");
-  if (user) {
-    // Récupérer le username en Firestore
-    const userDoc = await getDoc(doc(db, "users", user.uid));
-    const username = userDoc.exists() ? userDoc.data().username : user.email;
+    async function displayRanking() {
+  const usersSnapshot = await getDocs(collection(db, "users"));
+  const users = [];
 
-    nav.innerHTML = `
-      <div class="user-menu">
-        <button id="user-menu-button">${username} <i class="fas fa-caret-down"></i></button>
-        <ul id="user-dropdown">
-          <li><a href="Mon Compte.html">Mon Compte</a></li>
-          <li><a href="Paramètres.html"><button id="settingsBtn">Paramètres</button></a></li>
-          <li><button id="logoutBtn">Déconnexion</button></li>
-        </ul>
-      </div>`;
-
-    const userButton = document.getElementById("user-menu-button");
-    const dropdown = document.getElementById("user-dropdown");
-
-    // Toggle affichage menu
-    userButton.addEventListener("click", () => {
-      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  usersSnapshot.forEach(doc => {
+    const data = doc.data();
+    users.push({
+      username: data.username || "Anonyme",
+      points: data.points || 0
     });
+  });
 
-    // Déconnexion
-    document.getElementById("logoutBtn").addEventListener("click", async () => {
-      await signOut(auth);
-      updateUI(null);
-    });
-  } else {
-    nav.innerHTML = `
-      <div class="auth-links">
-        <a href="#" id="openLogin"><i class="fas fa-sign-in-alt"></i> Connexion</a>
-        <a href="#" id="openSignup"><i class="fas fa-user-plus"></i> Inscription</a>
-      </div>`;
+  users.sort((a, b) => b.points - a.points);
 
-    document.getElementById("openLogin").onclick = () => document.getElementById("loginModal").style.display = "block";
-    document.getElementById("openSignup").onclick = () => document.getElementById("signupModal").style.display = "block";
-  }
-}
-       document.querySelectorAll(".close").forEach(btn => {
-        btn.addEventListener("click", () => {
-          closeModal(btn.dataset.close);
-        });
-      });
+  tableBody.innerHTML = "";
+  users.forEach((user, index) => {
+    let topClass = "";
+    if (index === 0) topClass = "top-1";
+    else if (index === 1) topClass = "top-2";
+    else if (index === 2) topClass = "top-3";
 
-    signupForm.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const username = signupForm.username.value;
-      const email = signupForm.email.value;
-      const password = signupForm.password.value;
-      const confirmPassword = signupForm.confirmPassword.value;
-      if (password !== confirmPassword) return alert("Mots de passe différents");
-
-      try {
-        const cred = await createUserWithEmailAndPassword(auth, email, password);
-        await setDoc(doc(db, "users", cred.user.uid), {
-          username,
-          email,
-          points: 0
-        });
-        cred.user.displayName = username;
-        alert("Inscription réussie ! Connectez-vous maintenant.");
-        signupForm.reset();
-        document.getElementById("signupModal").style.display = "none";
-        document.getElementById("loginModal").style.display = "block";
-      } catch (err) {
-        alert(err.message);
-      }
-    });
-
-    loginForm.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const username = loginForm.username.value;
-      const password = loginForm.password.value;
-
-      const q = query(collection(db, "users"), where("username", "==", username));
-      const snapshot = await getDocs(q);
-
-      if (snapshot.empty) return alert("Utilisateur inconnu");
-      const userDoc = snapshot.docs[0];
-      const email = userDoc.data().email;
-
-      try {
-        await signInWithEmailAndPassword(auth, email, password);
-        await updateUI(auth.currentUser);
-        loginForm.reset();
-        document.getElementById("loginModal").style.display = "none";
-      } catch (err) {
-        alert("Mot de passe incorrect");
-      }
-    });
-
-    window.addEventListener("click", (e) => {
-      if (e.target.classList.contains("modal")) {
-        e.target.style.display = "none";
-      }
-    });
-
-window.addEventListener("DOMContentLoaded", async () => {
-  await updateUI(auth.currentUser);
-});
+    const row = `
+      <tr class="${topClass}">
+        <td class="rank">#${index + 1}</td>
+        <td>${user.username}</td>
+        <td>${user.points}</td>
+      </tr>
+    `;
+    tableBody.innerHTML += row;
+  });
+}  
+    displayRanking();
   </script>
+</body>
 </html>

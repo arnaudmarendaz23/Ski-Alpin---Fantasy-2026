@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- Here we parameter the language of the website-->
+<html lang="eng">
+    <!--Then we create the head, wit a titel, a navigation panel and the text associated and the link of the other pages, and font-family -->
+   
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alpine Ski Fantasy</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <nav>
+        <div class="topnav">
+            <img src="Image/Alpine Ski Racing Logo.jpg" alt="Logo" class="nav-logo">
+            <a href="index.html">
+                <img src="icons/home.png" alt="Home" class="nav-icon"> Home
+            </a>
+            <a href="Fantasy.html">
+                <img src="icons/fantasy.png" alt="Fantasy" class="nav-icon"> Fantasy
+            </a>
+            <a href="Leadership-board.html">
+                <img src="icons/skier_ranking.png" alt="Skier Rankings" class="nav-icon"> Skier Rankings
+            </a>
+            <a href="overall_ranking.html">
+                <img src="icons/overall_ranking.png" alt="Fantasy Ranking" class="nav-icon"> Fantasy Ranking
+            </a>
+            <a href="about.html">
+                <img src="icons/about us.png" alt="About Us" class="nav-icon"> About Us
+            </a>
+            <a class="active" href="rules.html">
+                <img src="icons/rules.png" alt="Rules" class="nav-icon"> Rules
+            </a>
+            <div class="login-container">
+                <a href="#login" id="loginBtn" class="login-link">
+                    <img src="icons/connexion.png" alt="Login" class="nav-icon-login">
+                </a>
+                <a href="#login" id="logoutBtn" class="login-link" style="display: none;">
+                    <img src="icons/connected.png" alt="Logout" class="nav-icon-login">
+                </a>
+            </div>
+        </div>
+    </nav>
+      
+      <!-- Fenêtre modale pour la connexion -->
+      <div id="loginModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Connection</h2>
+              <form id="loginForm">
+                  <label for="username">Username :</label>
+                  <input type="text" id="username" name="username" required>
+                  <label for="password">Password :</label>
+                  <input type="password" id="password" name="password" required>
+                  <button type="submit">Submit</button>
+                  <p>No Account ? <a href="#" id="registerLink">Register</a></p>
+              </form>
+          </div>
+      </div>
+      
+      <!-- Fenêtre modale pour l'enregistrement -->
+      <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <div>
+                    <label for="regUsername">Username:</label>
+                    <input type="text" id="regUsername" required>
+                </div>
+                <div>
+                    <label for="regPassword">Password:</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <div id="registerError" style="color: red; display: none;"></div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+        </a>
+    </div>
+</nav>
+
+        <body>
+        <main>
+            <h1>Rules</h1>
+            <h2>1. Team Composition</h2>
+            <h3>1.1. Budget </h3>
+            <p> Each player has 80 stars to form their team.</p>
+            <h3> 1.2. Composition</h3>
+            <p> A team must include <span class="bold">at least</span> one skier from each discipline (downhill, super-G, giant slalom, slalom).</p>
+            <p> A maximum of <span class="bold">two skiers from the same nationality</span> can be selected per discipline.</p>
+            
+            <h2>2. Point Allocation</h2>
+            <h3>2.1. Points After the Race</h3>
+            <p>Points are awarded according to the FIS points system (1st = 100, 2nd = 80, etc.).</p>
+            <h3>2.2. Race Bonuses</h3>
+
+           <ul class="my_text2">
+            <li>Victory: +20 points</li>
+            <li>Second place: +15 points</li>
+            <li>Third place: +10 points</li>
+            <li>Top 7: +5 points</li>            
+           </ul> 
+            
+            <h3>2.3. Consistency Bonuses (consecutive performance series)</h3>
+            <p>These bonuses apply to consecutive series of performances, but are <span class="bold">not cumulative</span> within the same series.</p> 
+            <p>For example, a series of victories will only grant +20 points (not +20 +15 +10 +5 additional points).</p>
+
+        <ul class="my_text2">
+            <li>Victory series: +40 points</li>
+            <li>Podium series: +30 points</li>
+            <li>Top 10 series (4th to 10th place): +20 points</li>
+            <li>Top 15 series (11th to 15th place): +10 points</li>
+            <li>Top 30 series (16th to 30th place): +5 points</li>
+        </ul>
+
+            <p>These bonuses are added to the individual race score (e.g., a victory gives a total of 100 + 20 + 40 = 160 points).</p>
+            
+            
+            <h2>3. Specific Bonuses</h2>
+            <h3>3.1. Two-Legged Races (slalom and giant slalom)</h3>
+            <p>+3 points per position gained in the second leg.</p>
+            <h4>Spectacular Comebacks:</h4>
+
+            <ul class="my_text2">
+                <li>30th to podium: +70 points</li>
+                <li>30th to Top 10: +30 points</li>
+                <li>30th to 1st place: +100 points</li>
+                <li>Any comeback to the podium (from any position): +5 points</li>
+            </ul>
+            
+            <h3>3.2. All Races (including two-legged races)</h3>
+            <P>Red bib (discipline leader): +15 points</P>
+            <P>Best intermediate time: +2 points per intermediate time</P>
+            <P>Best run time: +5 points</P>
+            <h3>3.3. Best Young Skier Ranking</h3>
+            <p>Any skier under the age of 25 at the start of the season (determined by the first race in Sölden) is eligible.</p>
+            <P>Race Classification:</P>
+
+            <ul class="my_text2">
+                <li>Best young skier: +5 points</li>
+                <li>Second best young skier: +3 points</li>
+                <li>Third best young skier: +1 point</li>
+                <li>Leader of the overall young skier ranking: +10 points per weekend</li>
+            </ul>
+
+            <h2>4. Restrictions and Clarifications</h2>
+            <p>Ranking and consistency bonuses are cumulative.</p>
+            <p>Consistency bonuses do not combine across categories (e.g., a podium series cannot be combined with a victory series).</p> 
+            <p>Performances must be validated according to the official FIS rankings to be counted.</p>
+            <p>Force majeure situations (e.g., cancellation or alteration of races) may result in adjustments to the points system.</p>
+            
+            <h2>5. Rankings and Victories</h2>
+            <p>Points are totaled after each race (by 8:00 AM the next day).</p>
+            <p>Weekly, monthly, and seasonal rankings will be published.</p>
+            <p>The player with the most points at the end of the season will be crowned Fantasy Alpine Skiing Champion.</P> 
+            <P>A small trophy will be awarded to the winner by the organizers.</p>
+            <script src="script.js"></script>
+            <script src="auth.js"></script>
+            </main>
+
+        <footer class="footer">
+            <br>
+            <a href="https://www.instagram.com/fisalpine/">Instagram</a><br>
+            <a href="https://www.facebook.com/fisalpine">Facebook</a><br>
+            <a href="https://x.com/fisalpine">X</a><br>
+        </footer>
+    </body>
+</html>
+

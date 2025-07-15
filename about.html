@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Here we parameter the language of the website-->
+<html lang="eng">
+    <!--Then we create the head, wit a titel, a navigation panel and the text associated and the link of the other pages, and font-family -->
+    <head>
+        <meta charset="utf-8">
+        <title>About us</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <nav>
+        <div class="topnav">
+            <img src="Image/Alpine Ski Racing Logo.jpg" alt="Logo" class="nav-logo">
+            <a href="index.html">
+                <img src="icons/home.png" alt="Home" class="nav-icon"> Home
+            </a>
+            <a href="Fantasy.html">
+                <img src="icons/fantasy.png" alt="Fantasy" class="nav-icon"> Fantasy
+            </a>
+            <a href="Leadership-board.html">
+                <img src="icons/skier_ranking.png" alt="Skier Rankings" class="nav-icon"> Skier Rankings
+            </a>
+            <a href="overall_ranking.html">
+                <img src="icons/overall_ranking.png" alt="Fantasy Ranking" class="nav-icon"> Fantasy Ranking
+            </a>
+            <a class="active" href="about.html">
+                <img src="icons/about us.png" alt="About Us" class="nav-icon"> About Us
+            </a>
+            <a href="rules.html">
+                <img src="icons/rules.png" alt="Rules" class="nav-icon"> Rules
+            </a>
+            <div class="login-container">
+                <a href="#login" id="loginBtn" class="login-link">
+                    <img src="icons/connexion.png" alt="Login" class="nav-icon-login">
+                </a>
+                <a href="#login" id="logoutBtn" class="login-link" style="display: none;">
+                    <img src="icons/connected.png" alt="Logout" class="nav-icon-login">
+                </a>
+            </div>
+        </div>
+    </nav>
+      
+      <!-- Fenêtre modale pour la connexion -->
+      <div id="loginModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Connection</h2>
+              <form id="loginForm">
+                  <label for="username">Username :</label>
+                  <input type="text" id="username" name="username" required>
+                  <label for="password">Password :</label>
+                  <input type="password" id="password" name="password" required>
+                  <button type="submit">Submit</button>
+                  <p>No Account ? <a href="#" id="registerLink">Register</a></p>
+              </form>
+          </div>
+      </div>
+      
+      <!-- Fenêtre modale pour l'enregistrement -->
+      <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <div>
+                    <label for="regUsername">Username:</label>
+                    <input type="text" id="regUsername" required>
+                </div>
+                <div>
+                    <label for="regPassword">Password:</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <div id="registerError" style="color: red; display: none;"></div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+        </a>
+    </div>
+</nav>
+
+
+    <body>
+        <main>
+            <h1>About us</h1>
+            <h2>The Team</h2>
+            <h3>Loic Marendaz</h3>
+            <h3> Arnaud Marendaz</h3>
+            <script src="script.js"></script>
+            <script src="auth.js"></script>
+        </main>
+        <footer class="footer">
+            <a href="https://www.instagram.com/fisalpine/">Instagram</a><br>
+            <a href="https://www.facebook.com/fisalpine">Facebook</a><br>
+            <a href="https://x.com/fisalpine">X</a><br>
+        </footer>
+    </body>

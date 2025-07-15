@@ -705,6 +705,11 @@ h6{
     align-items: center;     /* Ensures the content is centered vertically */
 }
 
+.skier-points {
+  color: #28a745;
+  font-weight: 600;
+  margin: 2px 0;
+}
 .skier-card:hover {
     background-color: lightblue;
     transform: scale(1.05);
@@ -728,7 +733,31 @@ h6{
 .see-more-link:hover {
     text-decoration: underline;
 }
+.dashboard-item {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+  }
 
+  .dashboard-item:hover {
+    transform: translateY(-4px);
+  }
+
+  .dashboard-item .label {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .dashboard-item .value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+  }
 
 #save-button {
     font-size: 18px;
@@ -814,7 +843,7 @@ h6{
     <nav>
       <a href="index.html"  tabindex="0"><i class="fas fa-home" aria-hidden="true"></i> Accueil</a>
       <a href="classement_skieurs.html" tabindex="0"><i class="fas fa-chart-line" aria-hidden="true"></i> Classements Skieurs</a>
-      <a href="#" tabindex="0"><i class="fas fa-users" aria-hidden="true"></i> Classements Joueurs</a>
+      <a href="classement_joueur.html" tabindex="0"><i class="fas fa-users" aria-hidden="true"></i> Classements Joueurs</a>
       <a href="#Mon_equipe.html" class="active" tabindex="0"><i class="fas fa-user" aria-hidden="true"></i> Mon Équipe</a>
       <a href="#" tabindex="0"><i class="fas fa-book" aria-hidden="true"></i> Règles</a>
       <a href="#" tabindex="0"><i class="fas fa-info-circle" aria-hidden="true"></i> À propos</a>
@@ -829,15 +858,48 @@ h6{
   <br>Quelques règles importantes à respecter :</br>
   <ul class="my_text2">
     <li>Tu dois avoir <strong>au moins un skieur par discipline</strong> (par exemple, Odermatt compte pour le géant, la descente et le Super-G).</li>
-    <li>Ton équipe ne peut pas dépasser <strong>80 étoiles</strong>.</li>
+    <li>Ton équipe ne peut pas dépasser <strong>120 étoiles</strong>.</li>
     <li>Tu peux choisir <strong>maximum 2 skieurs de la même nationalité</strong>.</li>
   </ul>
 </p>
+<div id="team-dashboard" style="
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin: 2rem auto;
+  padding: 20px;
+  max-width: 1000px;
+  background-color: var(--light-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  font-family: var(--font-primary);
+">
 
-                <div id="budget-container" style="text-align: center; margin-bottom: 10px; font-size: 20px;">
-                    <h6 style="font-weight: bold;">Total Budget: <span id="total-budget">80</span> étoiles</h6>
-                    <h6 style="font-weight: bold; color: green;">Budget restant: <span id="remaining-budget">80</span> étoiles</h6>
-                </div>
+  <div class="dashboard-item">
+    <i class="fas fa-coins" style="color: var(--main-red); font-size: 1.4rem;"></i>
+    <div class="label">Budget restant</div>
+    <div class="value" id="remaining-budget">120 ★</div>
+  </div>
+
+  <div class="dashboard-item">
+    <i class="fas fa-exchange-alt" style="color: #28a745; font-size: 1.4rem;"></i>
+    <div class="label">Transferts restants</div>
+    <div class="value" id="transfers-left">8</div>
+  </div>
+
+  <div class="dashboard-item">
+    <i class="fas fa-flag-checkered" style="color: #ffc107; font-size: 1.4rem;"></i>
+    <div class="label">Points dernière course</div>
+    <div class="value" id="last-race-points">0 pts</div>
+  </div>
+
+  <div class="dashboard-item">
+    <i class="fas fa-chart-line" style="color: #17a2b8; font-size: 1.4rem;"></i>
+    <div class="label">Total cumulé</div>
+    <div class="value" id="total-points">0 pts</div>
+  </div>
+</div>
+
 
                 <div class="container">            
                     <!-- Boxes pour les skieurs sélectionnés -->
@@ -872,7 +934,13 @@ h6{
                     <!-- Price filter added here -->
                     <input type="number" id="price-filter-min" placeholder="Prix min" oninput="applyFilters()">
                     <input type="number" id="price-filter-max" placeholder="Prix max" oninput="applyFilters()">
+                    <select id="sort-price" onchange="applyFilters()">
+                      <option value="">-- Trier par prix --</option>
+                      <option value="asc">Prix croissant</option>
+                      <option value="desc">Prix décroissant</option>
+                    </select>
                 </div>
+
             
                 <!-- Liste des skieurs avec pagination -->
                 <div id="skier-list" class="hidden">
@@ -962,7 +1030,7 @@ let filteredSkiers = [];
 let selectedSkiers = [];
 const maxSelections = 8;
 const maxPerNationality = 2;
-let totalBudget = 80;
+let totalBudget = 120;
 let remainingBudget = totalBudget;
 const budgetElement = document.getElementById("remaining-budget");
 const totalBudgetElement = document.getElementById("total-budget");
@@ -1265,7 +1333,7 @@ function selectSkier(skier) {
 }
 
 function updateRemainingBudget() {
-    budgetElement.innerText = `Budget restant : ${remainingBudget}`;
+    budgetElement.innerText = `${remainingBudget}`;
 }
 
 function updateSelectedBoxes() {
@@ -1278,9 +1346,15 @@ function updateSelectedBoxes() {
 
             box.classList.add("selected");
             box.innerHTML = `
-                <img src="${flagPath}" alt="Flag">
-                <p>${skier.firstName} ${skier.lastName}</p>
-            `;
+            <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+              <img src="${flagPath}" alt="Flag" style="width: 32px; height: 22px; object-fit: cover; margin-bottom: 4px;">
+              <div style="font-size: 0.9rem; font-weight: 600;">${skier.firstName} ${skier.lastName}</div>
+              <div style="display: flex; justify-content: center; gap: 8px; margin-top: 4px;">
+                <span style="color: #007bff; font-size: 0.85rem;">💰 ${skier.Price}★</span>
+                <span style="color: #28a745; font-size: 0.85rem;">🏁 ${skier.lastPoints || 0} pts</span>
+                </div>
+                </div>
+`;
             box.onclick = () => deselectSkier(index);
         } else {
             box.classList.remove("selected");
@@ -1354,8 +1428,10 @@ function applyFilters() {
     const selectedNationality = document.getElementById("nationality-filter").value;
     const ageFilter = document.getElementById("age-filter").value;
     const minPrice = parseFloat(document.getElementById("price-filter-min").value) || 5;
-    const maxPrice = parseFloat(document.getElementById("price-filter-max").value) || 20;
+    const maxPrice = parseFloat(document.getElementById("price-filter-max").value) || 28;
+    const sortPrice = document.getElementById("sort-price").value;
 
+    // Filtres
     filteredSkiers = skiersData.filter(skier => {
         const matchesSearch = `${skier.firstName} ${skier.lastName}`.toLowerCase().includes(searchQuery);
         const matchesDiscipline = selectedDiscipline ? skier.disciplines.includes(selectedDiscipline) : true;
@@ -1366,6 +1442,13 @@ function applyFilters() {
 
         return matchesSearch && matchesDiscipline && matchesNationality && matchesAge && matchesPrice;
     });
+
+    // Tri
+    if (sortPrice === "asc") {
+        filteredSkiers.sort((a, b) => parseFloat(a.Price) - parseFloat(b.Price));
+    } else if (sortPrice === "desc") {
+        filteredSkiers.sort((a, b) => parseFloat(b.Price) - parseFloat(a.Price));
+    }
 
     currentPage = 1;
     loadPage(currentPage);

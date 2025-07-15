@@ -6,7 +6,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 7,
+    "Price": 8,
     "age": 30,
     "dateofBirth": "17.11.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=161182"
@@ -16,39 +16,12 @@
     "firstName": "Giovanni",
     "lastName": "Borsotti",
     "disciplines": [
-      "GS",
-      "SG"
+      "GS"
     ],
-    "Price": 6,
+    "Price": 8,
     "age": 33,
     "dateofBirth": "18.12.1990",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=118636"
-  },
-  {
-    "nationality": "Italy",
-    "firstName": "Guglielmo",
-    "lastName": "Bosca",
-    "disciplines": [
-      "DH",
-      "SG"
-    ],
-    "Price": 8,
-    "age": 31,
-    "dateofBirth": "05.06.1993",
-    "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=150675"
-  },
-  {
-    "nationality": "Italy",
-    "firstName": "Emanuele",
-    "lastName": "Buzzi",
-    "disciplines": [
-      "DH",
-      "SG"
-    ],
-    "Price": 5,
-    "age": 30,
-    "dateofBirth": "27.10.1994",
-    "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=155676"
   },
   {
     "nationality": "Italy",
@@ -58,7 +31,7 @@
       "DH",
       "SG"
     ],
-    "Price": 9,
+    "Price": 20,
     "age": 34,
     "dateofBirth": "19.02.1990",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=118669"
@@ -70,7 +43,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 8,
+    "Price": 15,
     "age": 34,
     "dateofBirth": "01.09.1990",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=118704"
@@ -82,7 +55,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 8,
+    "Price": 9,
     "age": 23,
     "dateofBirth": "04.10.2001",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=220545"
@@ -96,7 +69,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 13,
     "age": 23,
     "dateofBirth": "30.03.2001",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=221571"
@@ -108,7 +81,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 6,
+    "Price": 8,
     "age": 38,
     "dateofBirth": "04.09.1986",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=71585"
@@ -121,7 +94,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 10,
     "age": 39,
     "dateofBirth": "17.12.1984",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=26841"
@@ -134,7 +107,7 @@
       "GS",
       "SL"
     ],
-    "Price": 6,
+    "Price": 8,
     "age": 25,
     "dateofBirth": "09.09.1999",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=205709"
@@ -159,7 +132,7 @@
       "GS",
       "SL"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 29,
     "dateofBirth": "20.02.1995",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=163838"
@@ -172,7 +145,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 26,
     "dateofBirth": "27.07.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=196047"
@@ -185,7 +158,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 22,
     "age": 35,
     "dateofBirth": "14.04.1989",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=109079"
@@ -210,7 +183,7 @@
       "DH",
       "SG"
     ],
-    "Price": 9,
+    "Price": 12,
     "age": 28,
     "dateofBirth": "26.12.1995",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=165366"
@@ -222,7 +195,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 6,
+    "Price": 5,
     "age": 23,
     "dateofBirth": "03.01.2001",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=221817"
@@ -235,7 +208,7 @@
       "GS",
       "SL"
     ],
-    "Price": 9,
+    "Price": 15,
     "age": 25,
     "dateofBirth": "22.09.1999",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=204319"
@@ -247,7 +220,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 7,
+    "Price": 13,
     "age": 27,
     "dateofBirth": "08.08.1997",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=190120"
@@ -283,7 +256,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 6,
+    "Price": 5,
     "age": 20,
     "dateofBirth": "26.02.2004",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=254718"
@@ -295,7 +268,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 6,
+    "Price": 8,
     "age": 33,
     "dateofBirth": "13.07.1991",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=132894"
@@ -346,7 +319,7 @@
       "GS",
       "SL"
     ],
-    "Price": 11,
+    "Price": 22,
     "age": 27,
     "dateofBirth": "27.12.1996",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=174450"
@@ -360,7 +333,7 @@
       "DH",
       "SG"
     ],
-    "Price": 14,
+    "Price": 21,
     "age": 32,
     "dateofBirth": "21.09.1992",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=137380"
@@ -385,7 +358,7 @@
       "GS",
       "SL"
     ],
-    "Price": 12,
+    "Price": 25,
     "age": 30,
     "dateofBirth": "02.07.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=154950"
@@ -398,7 +371,7 @@
       "GS",
       "SL"
     ],
-    "Price": 13,
+    "Price": 22,
     "age": 24,
     "dateofBirth": "21.04.2000",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=213823"
@@ -412,7 +385,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 20,
     "age": 24,
     "dateofBirth": "27.10.2000",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=213823"
@@ -424,7 +397,7 @@
     "disciplines": [
       "SG"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 29,
     "dateofBirth": "19.02.1995",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=165999"
@@ -474,7 +447,7 @@
       "GS",
       "SL"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 30,
     "dateofBirth": "12.07.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=254733"
@@ -487,7 +460,7 @@
       "DH",
       "SG"
     ],
-    "Price": 8,
+    "Price": 16,
     "age": 30,
     "dateofBirth": "16.07.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=154956"
@@ -538,7 +511,7 @@
       "GS",
       "SL"
     ],
-    "Price": 12,
+    "Price": 21,
     "age": 23,
     "dateofBirth": "18.08.2001",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=222507"
@@ -650,7 +623,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 9,
     "age": 31,
     "dateofBirth": "20.12.1992",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=137323"
@@ -675,22 +648,10 @@
       "DH",
       "SG"
     ],
-    "Price": 6,
+    "Price": 18,
     "age": 29,
     "dateofBirth": "03.02.1995",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=163381"
-  },
-  {
-    "nationality": "Slovenia",
-    "firstName": "Bostjan",
-    "lastName": "Kline",
-    "disciplines": [
-      "DH"
-    ],
-    "Price": 5,
-    "age": 33,
-    "dateofBirth": "09.03.1991",
-    "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=126771"
   },
   {
     "nationality": "Slovenia",
@@ -712,7 +673,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 9,
+    "Price": 20,
     "age": 32,
     "dateofBirth": "15.11.1992",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=137306"
@@ -849,7 +810,7 @@
       "SL",
       "SG"
     ],
-    "Price": 6,
+    "Price": 7,
     "age": 20,
     "dateofBirth": "12.02.2004",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=252120"
@@ -862,7 +823,7 @@
       "GS",
       "SL"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 23,
     "dateofBirth": "19.06.2001",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=219621"
@@ -887,7 +848,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 8,
+    "Price": 12,
     "age": 30,
     "dateofBirth": "09.09.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=160443"
@@ -913,7 +874,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 9,
     "age": 30,
     "dateofBirth": "06.11.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=156153"
@@ -964,7 +925,7 @@
       "DH",
       "SG"
     ],
-    "Price": 8,
+    "Price": 13,
     "age": 32,
     "dateofBirth": "14.07.1992",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=137204"
@@ -1002,7 +963,7 @@
       "DH",
       "SG"
     ],
-    "Price": 8,
+    "Price": 17,
     "age": 32,
     "dateofBirth": "27.03.1992",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=139503"
@@ -1079,7 +1040,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 5,
+    "Price": 7,
     "age": 35,
     "dateofBirth": "20.03.1989",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=105908"
@@ -1104,7 +1065,7 @@
       "DH",
       "SG"
     ],
-    "Price": 6,
+    "Price": 11,
     "age": 33,
     "dateofBirth": "17.06.1991",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=130869"
@@ -1156,7 +1117,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 34,
     "dateofBirth": "25.05.1990",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=113774"
@@ -1181,7 +1142,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 7,
     "age": 28,
     "dateofBirth": "27.05.1996",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=173338"
@@ -1194,7 +1155,7 @@
       "DH",
       "SG"
     ],
-    "Price": 6,
+    "Price": 7,
     "age": 26,
     "dateofBirth": "03.10.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=195130"
@@ -1208,7 +1169,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 7,
     "age": 23,
     "dateofBirth": "03.04.2001",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=219838"
@@ -1261,7 +1222,7 @@
       "SG",
       "SL"
     ],
-    "Price": 7,
+    "Price": 18,
     "age": 26,
     "dateofBirth": "12.02.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=194503"
@@ -1274,7 +1235,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 19,
     "dateofBirth": "26.07.2005",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=262208"
@@ -1286,7 +1247,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 5,
+    "Price": 12,
     "age": 24,
     "dateofBirth": "05.09.2000",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=210997"
@@ -1323,7 +1284,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 23,
     "dateofBirth": "24.04.2001",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=219841"
@@ -1359,7 +1320,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 5,
+    "Price": 8,
     "age": 25,
     "dateofBirth": "07.10.1999",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=203188"
@@ -1372,7 +1333,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 21,
     "dateofBirth": "19.02.2003",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=245551"
@@ -1385,7 +1346,7 @@
       "GS",
       "SL"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 26,
     "dateofBirth": "12.03.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=194889"
@@ -1398,7 +1359,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 7,
     "age": 22,
     "dateofBirth": "21.02.2002",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=229136"
@@ -1411,7 +1372,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 12,
     "age": 26,
     "dateofBirth": "26.01.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=196154"
@@ -1424,7 +1385,7 @@
       "GS",
       "SG"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 25,
     "dateofBirth": "10.05.1999",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=203571"
@@ -1449,7 +1410,7 @@
       "GS",
       "SL"
     ],
-    "Price": 5,
+    "Price": 7,
     "age": 29,
     "dateofBirth": "11.04.1995",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=165575"
@@ -1474,7 +1435,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 35,
     "dateofBirth": "13.06.1989",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=104588"
@@ -1499,7 +1460,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 6,
+    "Price": 12,
     "age": 30,
     "dateofBirth": "09.06.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=156112"
@@ -1511,7 +1472,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 9,
+    "Price": 20,
     "age": 32,
     "dateofBirth": "06.11.1992",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=137475"
@@ -1523,7 +1484,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 7,
+    "Price": 12,
     "age": 29,
     "dateofBirth": "22.12.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=159244"
@@ -1536,7 +1497,7 @@
       "GS",
       "SL"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 19,
     "dateofBirth": "09.04.2005",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=261017"
@@ -1549,7 +1510,7 @@
       "GS",
       "SL"
     ],
-    "Price": 5,
+    "Price": 9,
     "age": 24,
     "dateofBirth": "06.08.2000",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=210853"
@@ -1562,7 +1523,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 21,
     "dateofBirth": "19.12.2002",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=232755"
@@ -1575,7 +1536,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 33,
     "dateofBirth": "01.05.1991",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=126647"
@@ -1600,7 +1561,7 @@
       "GS",
       "SL"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 22,
     "dateofBirth": "21.03.2002",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=229135"
@@ -1612,7 +1573,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 30,
     "dateofBirth": "26.11.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=156247"
@@ -1734,7 +1695,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 12,
     "age": 31,
     "dateofBirth": "27.03.1993",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=148274"
@@ -1759,7 +1720,7 @@
       "DH",
       "SG"
     ],
-    "Price": 9,
+    "Price": 14,
     "age": 26,
     "dateofBirth": "08.05.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=195813"
@@ -1773,7 +1734,7 @@
       "DH",
       "SG"
     ],
-    "Price": 9,
+    "Price": 16,
     "age": 32,
     "dateofBirth": "23.06.1992",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=138512"
@@ -1786,7 +1747,7 @@
       "DH",
       "SG"
     ],
-    "Price": 6,
+    "Price": 7,
     "age": 25,
     "dateofBirth": "17.03.1999",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=203778"
@@ -1837,7 +1798,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 21,
     "dateofBirth": "27.09.2003",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=238436"
@@ -1850,7 +1811,7 @@
       "DH",
       "SG"
     ],
-    "Price": 10,
+    "Price": 15,
     "age": 29,
     "dateofBirth": "05.05.1995",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=166533"
@@ -1888,7 +1849,7 @@
       "DH",
       "SG"
     ],
-    "Price": 6,
+    "Price": 9,
     "age": 25,
     "dateofBirth": "23.11.1999",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=189550"
@@ -1915,7 +1876,7 @@
       "SL",
       "SG"
     ],
-    "Price": 15,
+    "Price": 25,
     "age": 28,
     "dateofBirth": "29.10.1996",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=174158"
@@ -1929,7 +1890,7 @@
       "DH",
       "SG"
     ],
-    "Price": 6,
+    "Price": 5,
     "age": 26,
     "dateofBirth": "30.06.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=195418"
@@ -1942,7 +1903,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 22,
     "age": 24,
     "dateofBirth": "08.01.2000",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=212375"
@@ -1956,7 +1917,7 @@
       "DH",
       "SG"
     ],
-    "Price": 9,
+    "Price": 17,
     "age": 32,
     "dateofBirth": "08.01.1992",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=138572"
@@ -1968,7 +1929,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 8,
+    "Price": 18,
     "age": 28,
     "dateofBirth": "19.11.1996",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=175449"
@@ -1994,7 +1955,7 @@
       "DH",
       "SG"
     ],
-    "Price": 18,
+    "Price": 28,
     "age": 27,
     "dateofBirth": "08.10.1997",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=190231"
@@ -2019,7 +1980,7 @@
       "DH",
       "SG"
     ],
-    "Price": 6,
+    "Price": 12,
     "age": 26,
     "dateofBirth": "19.01.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=195440"
@@ -2032,7 +1993,7 @@
       "DH",
       "SG"
     ],
-    "Price": 11,
+    "Price": 19,
     "age": 30,
     "dateofBirth": "16.05.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=156299"
@@ -2045,7 +2006,7 @@
       "DH",
       "SG"
     ],
-    "Price": 6,
+    "Price": 7,
     "age": 30,
     "dateofBirth": "15.05.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=156300"
@@ -2069,7 +2030,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 6,
+    "Price": 5,
     "age": 32,
     "dateofBirth": "28.02.1992",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=138523"
@@ -2081,7 +2042,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 6,
+    "Price": 5,
     "age": 26,
     "dateofBirth": "24.08.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=195791"
@@ -2105,7 +2066,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 9,
+    "Price": 20,
     "age": 35,
     "dateofBirth": "05.11.1989",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=105040"
@@ -2118,7 +2079,7 @@
       "DH",
       "SG"
     ],
-    "Price": 9,
+    "Price": 23,
     "age": 23,
     "dateofBirth": "24.07.2001",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=220878"
@@ -2155,7 +2116,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 10,
+    "Price": 16,
     "age": 31,
     "dateofBirth": "18.02.1993",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=148287"
@@ -2167,7 +2128,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 9,
+    "Price": 8,
     "age": 32,
     "dateofBirth": "04.05.1992",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=138578"
@@ -2203,7 +2164,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 10,
+    "Price": 16,
     "age": 29,
     "dateofBirth": "23.05.1995",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=166175"
@@ -2228,7 +2189,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 14,
     "age": 28,
     "dateofBirth": "02.04.1996",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=176974"
@@ -2241,7 +2202,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 23,
     "dateofBirth": "17.08.2001",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=223367"
@@ -2253,7 +2214,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 7,
+    "Price": 19,
     "age": 33,
     "dateofBirth": "03.10.1991",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=128892"
@@ -2278,7 +2239,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 7,
+    "Price": 5,
     "age": 24,
     "dateofBirth": "21.07.2000",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=214225"
@@ -2291,7 +2252,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 17,
     "age": 24,
     "dateofBirth": "24.11.2000",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=214543"
@@ -2303,7 +2264,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 7,
+    "Price": 5,
     "age": 21,
     "dateofBirth": "21.08.2003",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=238713"
@@ -2316,7 +2277,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 21,
     "dateofBirth": "29.05.2003",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=239796"
@@ -2329,7 +2290,7 @@
       "GS",
       "SL"
     ],
-    "Price": 12,
+    "Price": 22,
     "age": 32,
     "dateofBirth": "13.10.1992",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=137557"
@@ -2343,7 +2304,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 15,
     "age": 23,
     "dateofBirth": "18.05.2001",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=219777"
@@ -2355,7 +2316,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 7,
+    "Price": 10,
     "age": 27,
     "dateofBirth": "01.12.1996",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=176104"
@@ -2368,7 +2329,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 23,
     "dateofBirth": "12.08.2001",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=223324"
@@ -2382,7 +2343,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 25,
     "dateofBirth": "22.01.1999",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=228366"
@@ -2395,7 +2356,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 25,
     "dateofBirth": "21.05.1999",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=205113"
@@ -2407,7 +2368,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 7,
+    "Price": 5,
     "age": 21,
     "dateofBirth": "13.04.2003",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=238715"
@@ -2420,7 +2381,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 20,
     "age": 27,
     "dateofBirth": "14.06.1997",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=191304"
@@ -2432,7 +2393,7 @@
     "disciplines": [
       "DH"
     ],
-    "Price": 7,
+    "Price": 5,
     "age": 24,
     "dateofBirth": "04.02.2000",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=212020"
@@ -2444,7 +2405,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 7,
+    "Price": 5,
     "age": 22,
     "dateofBirth": "03.09.2002",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=230885"
@@ -2458,7 +2419,7 @@
       "DH",
       "SG"
     ],
-    "Price": 10,
+    "Price": 19,
     "age": 27,
     "dateofBirth": "17.09.1997",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=191305"
@@ -2471,7 +2432,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 25,
     "dateofBirth": "28.08.1999",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=205017"
@@ -2484,7 +2445,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 21,
     "dateofBirth": "16.01.2003",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=238714"
@@ -2497,7 +2458,7 @@
       "DH",
       "SG"
     ],
-    "Price": 9,
+    "Price": 14,
     "age": 33,
     "dateofBirth": "23.05.1991",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=126467"
@@ -2509,7 +2470,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 34,
     "dateofBirth": "19.04.1990",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=117790"
@@ -2521,7 +2482,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 22,
     "dateofBirth": "29.08.2002",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=231211"
@@ -2534,7 +2495,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 30,
     "dateofBirth": "07.07.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=156781"
@@ -2547,7 +2508,7 @@
       "DH",
       "SG"
     ],
-    "Price": 11,
+    "Price": 23,
     "age": 33,
     "dateofBirth": "01.10.1991",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=126472"
@@ -2559,7 +2520,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 22,
     "dateofBirth": "03.11.2002",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=230796"
@@ -2571,7 +2532,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 8,
+    "Price": 10,
     "age": 31,
     "dateofBirth": "13.05.1993",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=149514"
@@ -2584,7 +2545,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 24,
     "dateofBirth": "05.01.2000",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=211933"
@@ -2596,7 +2557,7 @@
     "disciplines": [
       "DH"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 32,
     "dateofBirth": "29.04.1992",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=137585"
@@ -2610,7 +2571,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 23,
     "dateofBirth": "15.07.2001",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=222708"
@@ -2623,7 +2584,7 @@
       "GS",
       "SL"
     ],
-    "Price": 8,
+    "Price": 9,
     "age": 28,
     "dateofBirth": "22.04.1996",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=175813"
@@ -2636,7 +2597,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 27,
     "dateofBirth": "30.04.1997",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=190039"
@@ -2662,7 +2623,7 @@
       "GS",
       "SL"
     ],
-    "Price": 8,
+    "Price": 11,
     "age": 30,
     "dateofBirth": "23.08.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=159978"
@@ -2674,7 +2635,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 23,
     "dateofBirth": "01.02.2001",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=219778"
@@ -2687,7 +2648,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 25,
     "dateofBirth": "06.01.1999",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=205325"
@@ -2699,7 +2660,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 27,
     "dateofBirth": "15.05.1997",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=191307"
@@ -2713,7 +2674,7 @@
       "SL",
       "SG"
     ],
-    "Price": 11,
+    "Price": 20,
     "age": 29,
     "dateofBirth": "16.08.1995",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=169280"
@@ -2726,7 +2687,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 5,
     "age": 22,
     "dateofBirth": "12.01.2002",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=228367"
@@ -2738,7 +2699,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 20,
     "dateofBirth": "29.02.2004",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=254034"
@@ -2751,7 +2712,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 11,
     "age": 33,
     "dateofBirth": "14.04.1991",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=126498"
@@ -2763,7 +2724,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 32,
     "dateofBirth": "12.09.1992",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=137598"
@@ -2776,7 +2737,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 5,
     "age": 18,
     "dateofBirth": "26.08.2006",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=219779"
@@ -2789,7 +2750,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 21,
     "dateofBirth": "04.07.2003",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=239799"
@@ -2802,7 +2763,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 26,
     "dateofBirth": "29.09.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=196711"
@@ -2828,7 +2789,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 19,
     "dateofBirth": "11.12.2004",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=254207"
@@ -2841,7 +2802,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 21,
     "dateofBirth": "10.06.2003",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=240189"
@@ -2854,7 +2815,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 21,
     "dateofBirth": "01.05.2003",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=246326"
@@ -2867,7 +2828,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 33,
     "dateofBirth": "31.08.1991",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=126502"
@@ -2880,7 +2841,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 22,
     "dateofBirth": "12.11.2002",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=231190"
@@ -2905,7 +2866,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 23,
     "dateofBirth": "24.05.2001",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=219780"
@@ -2918,7 +2879,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 12,
     "age": 26,
     "dateofBirth": "07.06.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=194529"
@@ -2930,7 +2891,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 7,
+    "Price": 11,
     "age": 26,
     "dateofBirth": "14.12.1997",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=189043"
@@ -2943,7 +2904,7 @@
       "GS",
       "SL"
     ],
-    "Price": 12,
+    "Price": 23,
     "age": 24,
     "dateofBirth": "19.04.2000",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=213820"
@@ -2956,7 +2917,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 20,
     "age": 27,
     "dateofBirth": "31.05.1997",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=189309"
@@ -2982,7 +2943,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 25,
     "dateofBirth": "23.11.1999",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=203745"
@@ -2994,7 +2955,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 24,
     "dateofBirth": "17.05.2000",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=212122"
@@ -3007,7 +2968,7 @@
       "DH",
       "SG"
     ],
-    "Price": 9,
+    "Price": 21,
     "age": 27,
     "dateofBirth": "03.05.1997",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=188682"
@@ -3020,7 +2981,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 27,
     "dateofBirth": "26.05.1997",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=187997"
@@ -3033,7 +2994,7 @@
       "GS",
       "SL"
     ],
-    "Price": 7,
+    "Price": 5,
     "age": 33,
     "dateofBirth": "31.05.1991",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=125587"
@@ -3046,7 +3007,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 8,
     "age": 27,
     "dateofBirth": "01.10.1997",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=187933"
@@ -3059,7 +3020,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 11,
     "age": 28,
     "dateofBirth": "28.12.1995",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=164059"
@@ -3072,7 +3033,7 @@
       "SG",
       "D"
     ],
-    "Price": 7,
+    "Price": 5,
     "age": 27,
     "dateofBirth": "21.04.1997",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=189311"
@@ -3084,7 +3045,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 9,
+    "Price": 13,
     "age": 25,
     "dateofBirth": "15.01.1999",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=202395"
@@ -3096,7 +3057,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 22,
     "dateofBirth": "08.09.2002",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=229505"
@@ -3109,7 +3070,7 @@
       "SL",
       "GS"
     ],
-    "Price": 6,
+    "Price": 8,
     "age": 28,
     "dateofBirth": "27.01.1996",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=172529"
@@ -3134,7 +3095,7 @@
       "GS",
       "SL"
     ],
-    "Price": 10,
+    "Price": 20,
     "age": 31,
     "dateofBirth": "27.01.1993",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=146641"
@@ -3183,7 +3144,7 @@
       "GS",
       "SL"
     ],
-    "Price": 5,
+    "Price": 10,
     "age": 21,
     "dateofBirth": "06.08.2003",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=246186"
@@ -3221,7 +3182,7 @@
       "DH",
       "SG"
     ],
-    "Price": 6,
+    "Price": 11,
     "age": 24,
     "dateofBirth": "02.06.2000",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=215760"
@@ -3347,7 +3308,7 @@
       "DH",
       "SG"
     ],
-    "Price": 9,
+    "Price": 19,
     "age": 30,
     "dateofBirth": "02.01.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=154638"
@@ -3360,7 +3321,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 8,
     "age": 28,
     "dateofBirth": "16.06.1996",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=172446"
@@ -3385,7 +3346,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 7,
+    "Price": 18,
     "age": 26,
     "dateofBirth": "07.09.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=194749"
@@ -3398,7 +3359,7 @@
       "GS",
       "SL"
     ],
-    "Price": 6,
+    "Price": 13,
     "age": 26,
     "dateofBirth": "25.08.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=195194"
@@ -3512,7 +3473,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 7,
+    "Price": 15,
     "age": 32,
     "dateofBirth": "18.01.1992",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=135985"
@@ -3564,7 +3525,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 11,
     "age": 32,
     "dateofBirth": "29.11.1991",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=126982"
@@ -3601,7 +3562,7 @@
       "DH",
       "SG"
     ],
-    "Price": 5,
+    "Price": 12,
     "age": 26,
     "dateofBirth": "21.11.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=200704"
@@ -3627,7 +3588,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 12,
     "age": 34,
     "dateofBirth": "26.06.1990",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=120313"
@@ -3639,7 +3600,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 11,
+    "Price": 21,
     "age": 27,
     "dateofBirth": "03.05.1997",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=187117"
@@ -3652,7 +3613,7 @@
       "GS",
       "SL"
     ],
-    "Price": 5,
+    "Price": 6,
     "age": 24,
     "dateofBirth": "19.03.2000",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=211665"
@@ -3678,7 +3639,7 @@
       "DH",
       "SG"
     ],
-    "Price": 11,
+    "Price": 15,
     "age": 33,
     "dateofBirth": "20.03.1991",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=127048"
@@ -3690,7 +3651,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 6,
+    "Price": 11,
     "age": 26,
     "dateofBirth": "13.11.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=194724"
@@ -3716,7 +3677,7 @@
       "DH",
       "SG"
     ],
-    "Price": 13,
+    "Price": 20,
     "age": 30,
     "dateofBirth": "13.10.1994",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=154653"
@@ -3729,7 +3690,7 @@
       "DH",
       "SG"
     ],
-    "Price": 6,
+    "Price": 9,
     "age": 40,
     "dateofBirth": "18.09.1984",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=61175"
@@ -3754,7 +3715,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 5,
+    "Price": 7,
     "age": 19,
     "dateofBirth": "28.07.2005",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=262695"
@@ -3779,7 +3740,7 @@
       "DH",
       "SG"
     ],
-    "Price": 7,
+    "Price": 6,
     "age": 28,
     "dateofBirth": "25.05.1996",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=175189"
@@ -3815,7 +3776,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 6,
+    "Price": 9,
     "age": 27,
     "dateofBirth": "22.07.1997",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=187951"
@@ -3827,7 +3788,7 @@
     "disciplines": [
       "GS"
     ],
-    "Price": 5,
+    "Price": 11,
     "age": 26,
     "dateofBirth": "24.07.1998",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=195408"
@@ -3853,7 +3814,7 @@
       "DH",
       "SG"
     ],
-    "Price": 6,
+    "Price": 10,
     "age": 38,
     "dateofBirth": "14.01.1986",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=68659"
@@ -3877,7 +3838,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 6,
+    "Price": 7,
     "age": 28,
     "dateofBirth": "21.11.1996",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=173085"
@@ -3889,7 +3850,7 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 9,
+    "Price": 13,
     "age": 37,
     "dateofBirth": "05.12.1986",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=77191"
@@ -3914,9 +3875,21 @@
     "disciplines": [
       "SL"
     ],
-    "Price": 6,
+    "Price": 8,
     "age": 28,
     "dateofBirth": "10.02.1996",
     "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=175928"
+  },
+  {
+    "nationality": "France",
+    "firstName": "Enzo",
+    "lastName": "Canaferina",
+    "disciplines": [
+      "SL"
+    ],
+    "Price": 7,
+    "age": 22,
+    "dateofBirth": "15.08.2003",
+    "lien": "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=al&competitorid=239148"
   }
 ]

@@ -1,0 +1,337 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-bottom: 50px; /* Espace pour le footer */
+    }
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 18px;
+}
+
+.classement-section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 70%; /* Utilise toute la largeur disponible */
+    border-collapse: collapse; /* Supprime les doubles bordures */
+    margin: 20px auto;
+    margin-top: 10px;
+    background-color: white; /* Fond blanc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute un effet d'ombre */
+}
+
+th, td {
+    padding: 12px; /* Plus d'espace pour rendre le tableau aéré */
+    text-align: center; /* Texte centré */
+    border: 1px solid #ddd; /* Bordure douce */
+}
+
+th {
+    background-color: red; /* Fond vert pour les en-têtes */
+    color: white; /* Texte blanc */
+    text-transform: uppercase; /* Met les textes en majuscules */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Couleur de fond alternée */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Change le fond de la ligne */
+    transform: scale(1.02); /* Agrandit légèrement la ligne */
+    transition: 0.3s ease; /* Rend l'effet fluide */
+}
+
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+p {
+    color: black;
+    text-align: justify;
+    font-size: 30px;
+    line-height: 0.2;
+}
+
+.my_text2{
+    font-size: 30px;
+}
+
+h1 {
+    margin:0;
+    color: black;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(Image/background_title.jpeg);
+    background-size: cover;
+    background-position: top;
+    padding: 80px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+
+
+h6{
+    text-align: center;
+    line-height: 0;
+    font-size: 30px;
+}
+
+.see-more-link {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.see-more-link:hover {
+    text-decoration: underline;
+}
+
+
+#save-button {
+    font-size: 18px;
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    display: block;
+    width: 80%; /* Largeur ajustable */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#save-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+a {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration-color: black;
+    color: black;
+}
+
+.topnav {
+    display: flex;
+    align-items: center; /* Aligne verticalement les éléments */
+    justify-content: flex-start; /* Aligne les éléments à gauche */
+    overflow: hidden;
+    background-color: red;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-top: 1px solid;
+}
+
+/* Style des liens de navigation */
+.topnav a {
+    display: flex;
+    align-items: center; /* Aligne le texte et les icônes */
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 24px;
+    padding: 30px 36px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Change la couleur au survol */
+.topnav a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Style du lien actif */
+.topnav a.active {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+/* Style de l'image du logo */
+.nav-logo {
+    width: 75px; /* Taille de l'image */
+    height: auto;
+    margin: 7px;
+    vertical-align: bottom;
+}
+
+/* Style des icônes dans le menu */
+.nav-icon {
+    width: 30px; /* Taille plus grande de l'icône */
+    height: auto;
+    margin-right: 12px; /* Espacement entre l'icône et le texte */
+    vertical-align: middle; /* Aligne verticalement l'icône avec le texte */
+}
+
+.footer{
+    border-top: 1px solid black; /* Trait horizontal */
+    background-color: red; /* Couleur de fond */
+    padding: 10px;
+}
+
+.login-container {
+    display: flex;
+    align-items: center; /* Aligne verticalement les icônes */
+    margin-left: auto; /* Pousse le conteneur vers la droite */
+}
+
+.login-link {
+display: flex;
+align-items: center;
+color: #f2f2f2;
+text-decoration: none;
+font-size: 24px;
+font-family: 'Courier New', Courier, monospace;
+padding: 10px 15px;
+}
+
+.login-link img {
+    width: 30px;
+    height: auto;
+    margin-left: 8px;
+}
+
+.login-link:hover {
+    color: black;
+    background-color: white;
+}
+
+  /* Icône de connexion */
+.nav-icon-login {
+width: 30px; /* Taille de l'icône de connexion */
+height: auto;
+margin-left: 8px; /* Espacement entre l'icône et le texte */
+vertical-align: middle;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond plus sombre */
+}
+
+/* Contenu de la fenêtre modale */
+.modal-content {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Dégradé */
+    color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.modal-content input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.modal-content button {
+    background-color: white;
+    color: #ff7e5f;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #ff7e5f;
+    color: white;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+/* Icône de connexion après connexion */
+.logged-in .nav-icon-login {
+    content: url('Image/connected-icon.png'); /* Icône de connexion changée */
+}

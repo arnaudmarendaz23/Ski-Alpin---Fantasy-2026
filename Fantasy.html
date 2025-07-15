@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- Here we parameter the language of the website-->
+<html lang="eng">
+    <!--Then we create the head, wit a titel, a navigation panel and the text associated and the link of the other pages -->
+    <head>
+        <meta charset="utf-8">
+        <title>Fantasy</title>
+        <link rel="stylesheet" href="style_2.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <nav>
+        <div class="topnav">
+            <img src="Image/Alpine Ski Racing Logo.jpg" alt="Logo" class="nav-logo">
+            <a href="index.html">
+                <img src="icons/home.png" alt="Home" class="nav-icon"> Accueil
+            </a>
+            <a class="active" href="Fantasy.html">
+                <img src="icons/fantasy.png" alt="Fantasy" class="nav-icon"> Mon équipe
+            </a>
+            <a href="Leadership-board.html">
+                <img src="icons/skier_ranking.png" alt="Skier Rankings" class="nav-icon"> Classement FIS
+            </a>
+            <a href="overall_ranking.html">
+                <img src="icons/overall_ranking.png" alt="Fantasy Ranking" class="nav-icon"> Classement Fantasy
+            </a>
+            <a href="about.html">
+                <img src="icons/about us.png" alt="About Us" class="nav-icon"> À propos
+            </a>
+            <a href="rules.html">
+                <img src="icons/rules.png" alt="Rules" class="nav-icon"> Règles
+            </a>
+                <div class="login-container">
+                    <a href="#login" id="loginBtn" class="login-link">
+                        <img src="icons/connexion.png" alt="Login" class="nav-icon-login">
+                    </a>
+                    <a href="#login" id="logoutBtn" class="login-link" style="display: none;">
+                        <img src="icons/connected.png" alt="Logout" class="nav-icon-login">
+                    </a>
+                </div>
+            </div>
+        </nav>
+          
+          <!-- Fenêtre modale pour la connexion -->
+          <div id="loginModal" class="modal">
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Connexion</h2>
+                  <form id="loginForm">
+                      <label for="username">Nom d'utilisateur :</label>
+                      <input type="text" id="username" name="username" required>
+                      <label for="password">Mot de passe :</label>
+                      <input type="password" id="password" name="password" required>
+                      <button type="submit">Envoyer</button>
+                      <p>Pas de compte ? <a href="#" id="registerLink">S'enregistrer</a></p>
+                  </form>
+              </div>
+          </div>
+          
+          <!-- Fenêtre modale pour l'enregistrement -->
+          <div id="registerModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Enregistrement</h2>
+                <form id="registerForm">
+                    <div>
+                        <label for="regUsername">Nom d'utilisateur :</label>
+                        <input type="text" id="regUsername" required>
+                    </div>
+                    <div>
+                        <label for="regPassword">Mot de passe :</label>
+                        <input type="password" id="regPassword" required>
+                    </div>
+                    <div>
+                        <label for="confirmPassword">Confirmer le mot de passe :</label>
+                        <input type="password" id="confirmPassword" required>
+                    </div>
+                    <div id="registerError" style="color: red; display: none;"></div>
+                    <button type="submit">S'enregistrer</button>
+                </form>
+            </div>
+        </div>
+            </a>
+        </div>
+    </nav>
+
+    <body>
+        <main>
+            <h1>Mon équipe</h1>
+            <p>
+                Sur cette page, vous devez selectionner 8 skieurs qui additionner vous donneront des points.
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>Ci-dessous, vous pouvez cliquer sur une case pour vos les skieurs et filtrer à votre guise.</br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>En bleu, vous verrez le prix du skieur. Vous trouverez également un lien vous redirigeant vers la page FIS du skier.</br> 
+                <br>
+                <br>
+                <br>
+                <br>                
+                <br>Il y a cependant quelques règles à respecter :</br> 
+                <ul class="my_text2">
+                    <li> Au minimum un skieur par discipline (p.ex. Odermatt compte pour le géant, la descente et le Super-G)</li>
+                    <li> Maximum 80 étoiles</li>
+                    <li> Maximum 2 skieurs de la même nationalité</li>
+                </ul>
+
+                <div id="budget-container" style="text-align: center; margin-bottom: 10px; font-size: 20px;">
+                    <h6 style="font-weight: bold;">Total Budget: <span id="total-budget">80</span> étoiles</h6>
+                    <h6 style="font-weight: bold; color: green;">Budget restant: <span id="remaining-budget">80</span> étoiles</h6>
+                </div>
+
+                <div class="container">            
+                    <!-- Boxes pour les skieurs sélectionnés -->
+                    <div id="boxes-container">
+                        <!-- Cases dynamiques générées via JS -->
+                        <div class="box" onclick="openSkierList(this)"><img src="icons/person.png" alt="person icon"><p>Sélectionner un skieur</p></div>
+                        <div class="box" onclick="openSkierList(this)"><img src="icons/person.png" alt="person icon"><p>Sélectionner un skieur</p></div>
+                        <div class="box" onclick="openSkierList(this)"><img src="icons/person.png" alt="person icon"><p>Sélectionner un skieur</p></div>
+                        <div class="box" onclick="openSkierList(this)"><img src="icons/person.png" alt="person icon"><p>Sélectionner un skieur</p></div>
+                        <div class="box" onclick="openSkierList(this)"><img src="icons/person.png" alt="person icon"><p>Sélectionner un skieur</p></div>
+                        <div class="box" onclick="openSkierList(this)"><img src="icons/person.png" alt="person icon"><p>Sélectionner un skieur</p></div>
+                        <div class="box" onclick="openSkierList(this)"><img src="icons/person.png" alt="person icon"><p>Sélectionner un skieur</p></div>
+                        <div class="box" onclick="openSkierList(this)"><img src="icons/person.png" alt="person icon"><p>Sélectionner un skieur</p></div>
+                    </div>
+                </div>
+            
+                <!-- Barre de recherche et filtres -->
+                <div id="filters" class="hidden">
+                    <input type="text" id="search-bar" placeholder="Rechercher un skieur..." oninput="searchSkiers()">
+                    <select id="discipline-filter" onchange="applyFilters()">
+                        <option value="">-- Filtrer par discipline --</option>
+                        <option value="SL">SL</option>
+                        <option value="GS">GS</option>
+                        <option value="DH">DH</option>
+                        <option value="SG">SG</option>
+                    </select>
+                    <select id="nationality-filter" onchange="applyFilters()">
+                        <option value="">-- Filtrer par nationalité --</option>
+                    </select>
+                    <input type="number" id="age-filter" placeholder="Filtrer par âge" oninput="applyFilters()">
+                    
+                    <!-- Price filter added here -->
+                    <input type="number" id="price-filter-min" placeholder="Prix min" oninput="applyFilters()">
+                    <input type="number" id="price-filter-max" placeholder="Prix max" oninput="applyFilters()">
+                </div>
+            
+                <!-- Liste des skieurs avec pagination -->
+                <div id="skier-list" class="hidden">
+                    <div id="skier-info"></div>
+                    <div id="pagination-controls">
+                        <button id="prev-page" onclick="prevPage()">Précédent</button>
+                        <span id="current-page">Page 1</span>
+                        <button id="next-page" onclick="nextPage()">Suivant</button>
+                    </div>
+                </div>
+                <button id="save-button">Sauvegarder l'équipe</button>
+                <script src="script_2.js"></script>
+                <script src="auth.js"></script>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+        </main>
+
+        <footer class="footer">
+            <a href="https://www.instagram.com/fisalpine/">Instagram</a><br>
+            <a href="https://www.facebook.com/fisalpine">Facebook</a><br>
+            <a href="https://x.com/fisalpine">X</a><br>
+        </footer>
+    </body>
