@@ -12,8 +12,8 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
   <style>
-    :root {
-      --main-red: #e50914;
+     :root {
+      --main-red: #c62828; 
       --dark-bg: #1a1a1a;
       --light-bg: #f8f8f8;
       --hover-gray: #ddd;
@@ -37,7 +37,6 @@
       display: flex;
       flex-direction: column;
     }
-
     /* TOP BAR 1 */
     .topbar1 {
       background: rgba(255, 255, 255, 0.95);
@@ -169,42 +168,6 @@
   color: var(--main-red);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
-
-    /* SECTION HERO */
-    .hero {
-      text-align: center;
-      padding: 110px 20px 50px;
-      background:
-        linear-gradient(rgba(229, 9, 20, 0.85), rgba(0, 0, 0, 0.85)),
-        url('Image/background_title.jpeg') center/cover no-repeat;
-      color: var(--white);
-      user-select: none;
-      box-shadow: inset 0 0 80px #000000cc;
-      letter-spacing: 1.1px;
-      min-height: 380px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .hero h1 {
-      font-size: 4.5rem;
-      font-weight: 900;
-      margin-bottom: 0.5rem;
-      text-shadow: 3px 3px 15px #000000dd;
-    }
-
-    .hero p {
-      font-size: 1.7rem;
-      font-weight: 500;
-      max-width: 680px;
-      line-height: 1.5;
-      color: #f0f0f0dd;
-      text-shadow: 1.5px 1.5px 6px #000000cc;
-      margin-bottom: 1.3rem;
-    }
-
     /* SECTION CONTENU */
     .section {
       max-width: 720px;
@@ -238,101 +201,6 @@
       margin: 0 auto;
     }
 
-#articles {
-    list-style-type: none;
-    padding: 0;
-    display: flex; /* Disposer les articles en flex */
-    flex-wrap: wrap; /* Pour gérer le passage à la ligne */
-    justify-content: space-evenly; /* Espacement entre les éléments */
-}
-
-.article-item {
-    width: 300px; /* Largeur des articles */
-    margin: 20px; /* Espacement entre les articles */
-    text-align: center;
-    opacity: 0.9; /* Rendre la box légèrement transparente par défaut */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition fluide pour opacité et zoom */
-    cursor: pointer;
-    border: 2px solid #ddd; /* Ajouter une bordure pour définir les boxes */
-    border-radius: 10px; /* Coins arrondis */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre pour donner de la profondeur */
-    overflow: hidden; /* Empêche les éléments de dépasser de la box */
-}
-
-.article-item img {
-    width: 100%;
-    height: auto;
-    max-height: 200px; /* Limite la hauteur des images */
-    object-fit: cover; /* Assure que l'image remplit correctement la box sans déformer */
-    transition: transform 0.3s ease;
-}
-
-.article-item h3 a {
-    text-decoration: none;
-    color: inherit; /* Garde la couleur du titre (optionnel) */
-}
-
-/* Effet hover */
-.article-item:hover {
-    opacity: 1; /* Rendre la box totalement opaque */
-    transform: scale(1.05); /* Agrandir légèrement la box */
-}
-
-.article-item:hover img {
-    transform: scale(1.1); /* Agrandir l'image lorsqu'on survole la box */
-}
-
-/* Ajout d'un effet de clic (optionnel) */
-.article-item:active {
-    transform: scale(1.02); /* Réduit l'effet de zoom au clic */
-}
-
-.scrollable {
-        width: 50%;
-        max-height: 50vh;
-        overflow-y: auto;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        padding: 0;
-        margin: 20px auto;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        background-color: #ffffff;
-      }
-  
-table {
-        width: 100%;
-        border-collapse: collapse;
-        overflow-y: auto;
-        border-left: 2px solid #ccc;
-      }
-  
-th {
-        background-color: red;
-        color: white;
-        font-weight: bold;
-        font-size: 30px;
-        padding: 12px;
-        text-align: left;
-        position: sticky;
-        top: 0;
-        z-index: 1;
-      }
-  
-td {
-        padding: 12px;
-        border-bottom: 1px solid #ddd;
-        vertical-align: top;
-        font-size: 25px;
-      }
-  
-tr:nth-child(even) {
-        background-color: #f9f9f9;
-      }
-  
-tr:hover {
-        background-color: #f1f1f1;
-        cursor: pointer;
-      }
   
 .details {
         background-color: #e9ecef;
@@ -516,30 +384,6 @@ tr:hover {
 .close:hover {
   color: #000;
 }
-
-
-    /* ENCADRÉ JAUNE SITE EN CONSTRUCTION DANS LA SECTION */
-    .construction-alert {
-      background-color: var(--yellow-alert-bg);
-      border-left: 8px solid var(--yellow-alert-border);
-      color: #4a4a00;
-      font-weight: 700;
-      font-size: 1.15rem;
-      padding: 16px 22px;
-      border-radius: 10px;
-      box-shadow: 0 3px 12px rgba(242, 214, 0, 0.35);
-      user-select: none;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      max-width: 680px;
-      margin: 0 auto;
-    }
-    .construction-alert i {
-      font-size: 1.7rem;
-    }
-
         /* Form styles */
     form label {
       display: block;
@@ -661,59 +505,148 @@ h6{
     gap: 10px;
 }
 
+/* 1. Carte globale */
 .skier-card {
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, background-color 0.3s ease;
-    font-size: 25px;
-    line-height: 0.1;
-    gap: 0px;
-    display: flex;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  margin: 12px;
 }
 
+/* Effet hover sur ordi */
+.skier-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
 
+/* 2. Contenu flex horizontal sur desktop, vertical sur mobile */
 .skier-card-content {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 12px;
+}
+
+/* Desktop >= 600px = ligne */
+@media (min-width: 600px) {
+  .skier-card-content {
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    gap: 0px;
+  }
 }
 
+/* 3. Bloc info (drapeau + texte) */
 .skier-info {
-
-    flex-direction: column;
-    gap: 0px;
-    line-height: 0.1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 0; /* ESSENTIEL pour ne pas déborder */
 }
 
+/* Desktop = alignement à gauche */
+@media (min-width: 600px) {
+  .skier-info {
+    align-items: flex-start;
+  }
+}
+
+/* Drapeau */
 .skier-info img {
-    width: 50px;
-    margin-right: 15px;
+  width: 40px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* Nom */
+.skier-info h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  word-break: break-word;       /* coupe proprement */
+  overflow-wrap: anywhere;      /* plus permissif */
+  white-space: normal;
+  max-width: 180px;             /* limite la largeur */
+}
+
+/* Desktop = texte aligné à gauche + plus d’espace */
+@media (min-width: 600px) {
+  .skier-info h4 {
+    text-align: left;
+    max-width: 240px;
+  }
+}
+
+/* Âge & disciplines */
+.skier-info p {
+  margin: 2px 0;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* Desktop = aligné à gauche */
+@media (min-width: 600px) {
+  .skier-info p {
+    text-align: left;
+  }
+}
+
+/* Lien “Voir plus” */
+.see-more-link {
+  font-size: 0.85rem;
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+.see-more-link:hover {
+  color: #155ab6;
+}
+
+/* 4. Prix — VRAIMENT mis en évidence */
 .skier-price {
-    font-size: 80px;
-    font-weight: bold;
-    color: #007BFF;
-    text-align: center;  /* This centers the text horizontally */
-    width: 80px;  /* Ensure the price div has a fixed width for proper centering */
-    display: flex;
-    justify-content: center; /* Ensures the content is centered horizontally */
-    align-items: center;     /* Ensures the content is centered vertically */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skier-price span {
+  background: #e8f0fe;
+  color: #1a73e8;
+  font-size: 1.4rem;
+  font-weight: 800;
+  padding: 8px 16px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(26,115,232,0.3);
+}
+
+/* Responsive : agrandir un peu sur mobile */
+@media (max-width: 480px) {
+  .skier-price span {
+    font-size: 1.6rem;
+    padding: 10px 18px;
+  }
+}
+.skier-price span {
+  font-weight: 700;
+  color: #007bff;
+  font-size: 1rem;
+  margin-top: 8px;
+  display: inline-block;
 }
 
 .skier-points {
   color: #28a745;
   font-weight: 600;
   margin: 2px 0;
-}
-.skier-card:hover {
-    background-color: lightblue;
-    transform: scale(1.05);
-    cursor: pointer;
 }
 
 .skier-card.selected {
@@ -780,6 +713,19 @@ h6{
     background-color: #218838;
     transform: scale(1.05);
 }
+button.remove-button {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+button.remove-button:hover {
+  background-color: #e04848;
+}
 
     /* RESPONSIVE */
     @media (max-width: 768px) {
@@ -822,9 +768,23 @@ h6{
         font-size: 1.1rem;
       }
     }
+    @media screen and (max-width: 600px) {
+  .skier-card {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .skier-card h3 {
+    font-size: 1rem;
+  }
+
+  .skier-card .remove-button {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
   </style>
 </head>
-
 <body>
 <header class="topbar1" role="banner" aria-label="Barre de navigation principale">
   <div class="logo" aria-label="Logo Ski Alpin Fantasy">
@@ -837,7 +797,6 @@ h6{
     </div>
   </nav>
 </header>
-
   <!-- Top bar 2 - menu principal -->
   <nav class="topbar2" role="navigation" aria-label="Menu principal">
     <nav>
@@ -849,7 +808,6 @@ h6{
       <a href="#" tabindex="0"><i class="fas fa-info-circle" aria-hidden="true"></i> À propos</a>
     </nav>
   </nav>
-
  <h1>Mon équipe</h1>
 <p>
   Compose ton équipe en sélectionnant <strong>8 skieurs</strong> pour marquer un maximum de points !
@@ -1273,18 +1231,18 @@ function loadPage(page) {
         card.className = "skier-card";
         const flagPath = `flags/${skier.nationality.toLowerCase()}.png`;
         card.innerHTML = `
-            <div class="skier-card-content">
-                <div class="skier-info">
-                    <img src="${flagPath}" alt="${skier.nationality} flag">
-                    <h4>${skier.firstName} ${skier.lastName}</h4>
-                    <p>Age: ${skier.age}</p>
-                    <p>Disciplines: ${skier.disciplines.join(", ")}</p>
-                    <a href="${skier.lien}" target="_blank" class="see-more-link" onclick="event.stopPropagation()">Voir plus</a>
-                </div>
-                <div class="skier-price">
-                    <span>${skier.Price}</span>
-                </div>
-            </div>
+  <div class="skier-card-content">
+    <div class="skier-info">
+      <img src="${flagPath}" alt="${skier.nationality} flag">
+      <h4>${skier.firstName} ${skier.lastName}</h4>
+      <p>Age: ${skier.age}</p>
+      <p>Disciplines: ${skier.disciplines.join(", ")}</p>
+      <a href="${skier.lien}" target="_blank" class="see-more-link" onclick="event.stopPropagation()">Voir plus</a>
+    </div>
+    <div class="skier-price">
+      <span>💰 ${skier.Price}★</span>
+    </div>
+  </div>
         `;
         card.onclick = () => selectSkier(skier);
         fragment.appendChild(card);

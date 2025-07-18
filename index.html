@@ -804,8 +804,26 @@ async function updateUI(user) {
         document.getElementById("signupModal").style.display = "none";
         document.getElementById("loginModal").style.display = "block";
       } catch (err) {
-        alert(err.message);
-      }
+  alert(err.message);
+  console.error("Erreur à l'inscription:", err);
+}
+try {
+  const cred = await createUserWithEmailAndPassword(auth, email, password);
+  try {
+    await setDoc(doc(db, "users", cred.user.uid), {
+      username,
+      email,
+      points: 0
+    });
+  } catch (docErr) {
+    console.error("Erreur Firestore:", docErr);
+    alert("Erreur lors de l'enregistrement des données utilisateur.");
+  }
+} catch (err) {
+  alert(err.message);
+  console.error("Erreur Auth:", err);
+}
+
     });
 
     loginForm.addEventListener("submit", async (e) => {
